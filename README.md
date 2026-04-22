@@ -1,36 +1,53 @@
-# Claude Code — 57 Tecniche
+# 🎓 Corso: Claude Code — Le 99 Tecniche Masterclass
 
-Questo repository contiene la risorsa ufficiale del corso **"Claude Code — 57 Tecniche"**. 
-Si tratta di una guida completa formatta in HTML che raccoglie procedure rodate, prompt avanzati, meccaniche nascoste e best practices (il famoso "l'altro 80% che la maggior parte non conosce") per padroneggiare Claude Code.
+Benvenuti nella repository ufficiale del corso definitivo su **Claude Code**. 
+Questa non è una semplice raccolta di comandi, ma un **laboratorio di Agentic Coding** progettato per trasformare radicalmente il vostro workflow di sviluppo.
 
-## 📚 Struttura della Guida
+Io sono **Christian Quintino De Luca**, docente del corso. In questo spazio abbiamo condensato l'altro 80% della potenza di Claude che la maggior parte degli sviluppatori non utilizzerà mai: automazioni estreme, orchestrazione di agenti e tecniche di controllo del pensiero algoritmico.
 
-Il file principale `claude-code-99-tecniche.html` contiene 57 tecniche suddivise strategicamente in 8 categorie essenziali per ogni moderno sviluppatore:
+---
 
-1. ⌨️ **Comandi Essenziali**: pianificazione (`/compact`, `/clear`, `/init`), budgeting term e profilazione (`/cost`, `/memory`).
-2. ⚡ **Tecniche di Produttività**: code review, workflow test-first, revisione integrata e commit checkpointing via git.
-3. 🏗️ **Tecniche di Architettura**: audit strutturali, enforce di pattern via `CLAUDE.md`, migrazioni dati, e profiler di perfomance.
-4. 🤖 **Automazione del Workflow**: CI Pipeline Builder, script pre-commit, setup ambienti.
-5. 🔧 **Debug e Recupero**: blame git automatici e risoluzione di dipendenze incrociate.
-6. 🚀 **Tecniche Avanzate**: L'uso estensivo dei marker più aggressivi (`autopilot:`, `ralph:`, `ulw` e Team Mode).
-7. ⚙️ **Workflow Profondi**: Skip permissions, `git worktrees`, `HANDOFF.md`, e i container docker.
-8. 💎 **Potenza Nascosta**: Operatività non-interattiva, workflow invisibili al terminale.
+## 🎯 Il Sillabo del Corso (14 Moduli)
 
-## 🚀 Come visualizzare i contenuti
+Il materiale didattico è strutturato in **14 sezioni fondamentali**, che coprono l'intero spettro delle **99 tecniche** studiate durante le lezioni. Ogni modulo è progettato per essere testato immediatamente nel file interattivo incluso.
 
-La guida è stata volutamente ottimizzata come *"Zero-Dependencies Single-Page Application"*.
-Tutto il CSS, il DOM management e i font web (Google Fonts) sono incorporati e ottimizzati per l'usabilità.
+1.  **⌨️ Comandi Essenziali**: Fondamenta, navigazione e gestione del contesto base.
+2.  **⚡ Tecniche di Produttività**: Velocizzare le operazioni quotidiane e ridurre gli attriti.
+3.  **🏗️ Tecniche di Architettura**: Design di sistema e auditing strutturale tramite AI.
+4.  **🤖 Automazione del Workflow**: Creazione di pipeline e hook auto-eseguibili.
+5.  **🔧 Debug e Recupero**: Strategie di self-healing e investigazione dei bug.
+6.  **🚀 Tecniche Avanzate**: L'uso di Autopilot, Ralph e modalità ultra-work.
+7.  **⚙️ Workflow Profondi**: Orchestrazione asincrona e gestione multipla del contesto.
+8.  **💎 Potenza Nascosta**: Feature non documentate e ottimizzazione dei token.
+9.  **👥 Tecniche da Comunità**: Best practices e pattern emersi dall'uso reale.
+10. **🏛️ Architettura Avanzata**: Refactoring di larga scala e migrazioni guidate.
+11. **🧠 Controllo del Pensiero**: Manipolazione dei ragionamenti interni e logica socratica.
+12. **💻 CLI Maestria**: Utilizzo estremo del terminale e integrazioni custom.
+13. **🔒 Segreti del Sistema**: Sicurezza, policy skip e gestione dei limiti API.
+14. **🌟 Ultimo Livello**: La frontiera dell'Agentic Coding e orchestrazione di N agenti.
 
-Hai due opzioni per iniziare:
+---
 
-### Metodo 1: Browser Diretto (Consigliato)
-Fai doppio click su `claude-code-99-tecniche.html` in Esplora Risorse, oppure trascinalo all'interno di un qualsiasi browser (Chrome, Edge, Safari).
+## 🚀 Come avviare il Laboratorio Didattico
 
-### Metodo 2: Web Server Locale
-Se desideri visualizzare la guida da localhost (specialmente se intendi integrarla su altre app), avviala da terminale:
+Tutto il corpus delle 99 tecniche è contenuto nel file interattivo in questa repo.
 
-**Se usi Python:**
-```bash
-python -m http.server 8080
-```
-Visita `http://localhost:8080/claude-code-99-tecniche.html`
+1. **Clona la repo**:
+   ```bash
+   git clone https://github.com/rthgit/corso-claude-code-99-tecniche.git
+   ```
+2. **Apri il Laboratorio**:
+   Entra nella cartella e avvia il file `claude-code-99-tecniche.html` nel tuo browser preferito.
+
+## 📖 Il Messaggio del Docente
+
+> "In un'era dove il codice viene generato in millisecondi, la vera differenza non la fa chi scrive più velocemente, ma chi sa orchestrare meglio il pensiero della macchina. Queste 99 tecniche sono i vostri nuovi attrezzi del mestiere. Usateli con metodo, testateli ogni giorno e smettete di essere semplici programmatori per diventare architetti di agenti."
+> 
+> — *Christian Quintino De Luca*
+
+---
+
+### Sostegno e Contatti
+Per dubbi architetturali o sessioni di consulenza enterprise, potete scrivermi a: [info@rthitalia.com](mailto:info@rthitalia.com)
+
+Buon apprendimento.

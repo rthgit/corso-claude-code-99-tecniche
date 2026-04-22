@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Claude Code — 57 Tecniche</title>
+  <title>Claude Code — 99 Tecniche</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=JetBrains+Mono:wght@400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
@@ -44,7 +44,7 @@
       font-weight: 300;
       font-size: 13.5px;
       line-height: 1.75;
-      color: #7a7a8e;
+      color: #c97a45;
       animation: fadeIn 0.2s ease;
     }
     .card-item.open .card-body-text { display: block; }
@@ -53,7 +53,7 @@
     .card-num {
       font-family: 'JetBrains Mono', monospace;
       font-size: 11px;
-      color: #2a2a38;
+      color: #5a3010;
       min-width: 28px;
       letter-spacing: 0.05em;
     }
@@ -68,7 +68,7 @@
       font-family: 'Lato', sans-serif;
       font-weight: 700;
       font-size: 14px;
-      color: #c8c8d8;
+      color: #e8c8a0;
     }
     .card-tag {
       font-family: 'JetBrains Mono', monospace;
@@ -89,15 +89,15 @@
       border-radius: 20px;
       border: 1px solid #1e1e28;
       background: transparent;
-      color: #5a5a6e;
+      color: #7a4a2a;
       font-family: 'JetBrains Mono', monospace;
       font-size: 11px;
       cursor: pointer;
       transition: all 0.15s;
       white-space: nowrap;
     }
-    .nav-pill:hover { border-color: #3a3a4e; color: #9a9aae; }
-    .nav-pill.active { background: #1a1a22; color: #e2e2e8; border-color: #3a3a4e; }
+    .nav-pill:hover { border-color: #3a3a4e; color: #c97a45; }
+    .nav-pill.active { background: #1a1508; color: #e8a060; border-color: #5a3a1e; }
 
     .section-block { margin-bottom: 56px; scroll-margin-top: 80px; }
 
@@ -117,13 +117,13 @@
     .section-title {
       font-family: 'Playfair Display', serif;
       font-size: 24px;
-      color: #e2e2e8;
+      color: #e8c8a0;
     }
     .section-range {
       margin-left: auto;
       font-family: 'JetBrains Mono', monospace;
       font-size: 11px;
-      color: #2e2e3e;
+      color: #4a2010;
       letter-spacing: 0.08em;
     }
 
@@ -140,39 +140,53 @@
     .step-text {
       font-family: 'Lato', sans-serif;
       font-size: 13px;
-      color: #6a6a7e;
+      color: #a06040;
       padding-top: 4px;
     }
-    .step-text strong { color: #c8c8d8; }
+    .step-text strong { color: #e8c8a0; }
   </style>
 </head>
 <body>
 
   <!-- HEADER -->
-  <div style="border-bottom: 1px solid #1a1a22; padding: 60px 24px 48px; max-width: 760px; margin: 0 auto;">
-    <div style="font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:0.25em; color:#e8ff5a; text-transform:uppercase; margin-bottom:20px; display:flex; align-items:center; gap:10px;">
-      <span style="display:block; width:20px; height:1px; background:#e8ff5a;"></span>
-      Guida Completa
+  <div style="position:relative; overflow:hidden; border-bottom:1px solid rgba(232,160,60,0.15); padding:72px 24px 56px; max-width:760px; margin:0 auto;">
+    <!-- bg glow -->
+    <div style="position:absolute; top:-80px; right:-60px; width:340px; height:340px; background:radial-gradient(circle, rgba(220,120,40,0.07) 0%, transparent 70%); pointer-events:none;"></div>
+    <div style="position:absolute; bottom:0; left:-40px; width:200px; height:200px; background:radial-gradient(circle, rgba(232,255,90,0.04) 0%, transparent 70%); pointer-events:none;"></div>
+
+    <!-- label -->
+    <div style="font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:0.3em; color:#c97a45; text-transform:uppercase; margin-bottom:28px; display:flex; align-items:center; gap:12px;">
+      <span style="display:block; width:32px; height:1px; background:linear-gradient(90deg,#c97a45,transparent);"></span>
+      Guida Completa · Aprile 2026
+      <span style="display:block; width:32px; height:1px; background:linear-gradient(270deg,#c97a45,transparent);"></span>
     </div>
-    <h1 style="font-family:'Playfair Display',serif; font-size:clamp(40px,10vw,68px); line-height:1.0; letter-spacing:-0.02em; margin-bottom:20px; color:#e8e8f0;">
-      Claude Code<br>
-      <span style="font-style:italic; color:#e8ff5a;">57 Tecniche</span>
+
+    <!-- title -->
+    <h1 style="font-family:'Playfair Display',serif; font-size:clamp(44px,11vw,76px); line-height:0.95; letter-spacing:-0.03em; margin-bottom:8px; color:#f0e8dc;">
+      Claude Code
     </h1>
-    <p style="font-family:'Lato',sans-serif; font-weight:300; font-size:15px; color:#5a5a6e; max-width:440px; line-height:1.7;">
-      Ogni tecnica che fa davvero la differenza. Testate ogni giorno. Zero teoria. L'altro 80% che la maggior parte degli sviluppatori non conosce.
+    <h1 style="font-family:'Playfair Display',serif; font-size:clamp(44px,11vw,76px); line-height:0.95; letter-spacing:-0.03em; margin-bottom:32px;">
+      <span style="font-style:italic; background:linear-gradient(135deg,#e8a060 0%,#d4782a 50%,#e8c080 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">99 Tecniche</span>
+    </h1>
+
+    <!-- desc -->
+    <p style="font-family:'Lato',sans-serif; font-weight:300; font-size:15px; color:#8a6040; max-width:460px; line-height:1.75; margin-bottom:44px;">
+      Ogni tecnica che fa davvero la differenza — dalle basi agli angoli più nascosti del tool. Testate ogni giorno. Zero teoria. Quello che il 95% degli sviluppatori non sa.
     </p>
-    <div style="display:flex; gap:40px; margin-top:36px; flex-wrap:wrap;">
-      <div>
-        <div style="font-family:'Playfair Display',serif; font-size:36px; color:#e8ff5a; line-height:1;">57</div>
-        <div style="font-family:'Lato',sans-serif; font-size:11px; color:#3a3a4e; text-transform:uppercase; letter-spacing:0.12em; margin-top:4px;">Tecniche</div>
+
+    <!-- stats -->
+    <div style="display:flex; gap:0; flex-wrap:wrap; border:1px solid rgba(200,120,60,0.15); border-radius:12px; overflow:hidden; max-width:460px;">
+      <div style="flex:1; padding:20px 24px; border-right:1px solid rgba(200,120,60,0.15);">
+        <div style="font-family:'Playfair Display',serif; font-size:40px; color:#e8a060; line-height:1; font-weight:700;">99</div>
+        <div style="font-family:'JetBrains Mono',monospace; font-size:9px; color:#5a3a20; text-transform:uppercase; letter-spacing:0.15em; margin-top:6px;">Tecniche</div>
       </div>
-      <div>
-        <div style="font-family:'Playfair Display',serif; font-size:36px; color:#e8ff5a; line-height:1;">8</div>
-        <div style="font-family:'Lato',sans-serif; font-size:11px; color:#3a3a4e; text-transform:uppercase; letter-spacing:0.12em; margin-top:4px;">Categorie</div>
+      <div style="flex:1; padding:20px 24px; border-right:1px solid rgba(200,120,60,0.15);">
+        <div style="font-family:'Playfair Display',serif; font-size:40px; color:#e8a060; line-height:1; font-weight:700;">14</div>
+        <div style="font-family:'JetBrains Mono',monospace; font-size:9px; color:#5a3a20; text-transform:uppercase; letter-spacing:0.15em; margin-top:6px;">Sezioni</div>
       </div>
-      <div>
-        <div style="font-family:'Playfair Display',serif; font-size:36px; color:#e8ff5a; line-height:1;">80%</div>
-        <div style="font-family:'Lato',sans-serif; font-size:11px; color:#3a3a4e; text-transform:uppercase; letter-spacing:0.12em; margin-top:4px;">Nascosto</div>
+      <div style="flex:1; padding:20px 24px;">
+        <div style="font-family:'Playfair Display',serif; font-size:40px; color:#e8a060; line-height:1; font-weight:700;">95%</div>
+        <div style="font-family:'JetBrains Mono',monospace; font-size:9px; color:#5a3a20; text-transform:uppercase; letter-spacing:0.15em; margin-top:6px;">Nascosto</div>
       </div>
     </div>
   </div>
@@ -187,6 +201,12 @@
     <button class="nav-pill" onclick="scrollTo('advanced', this)">🚀 Tecniche Avanzate</button>
     <button class="nav-pill" onclick="scrollTo('deepworkflow', this)">⚙️ Workflow Profondi</button>
     <button class="nav-pill" onclick="scrollTo('hidden', this)">💎 Potenza Nascosta</button>
+    <button class="nav-pill" onclick="scrollTo('community', this)">🌐 Tecniche da Comunità</button>
+    <button class="nav-pill" onclick="scrollTo('architecture2', this)">🧠 Architettura Avanzata</button>
+    <button class="nav-pill" onclick="scrollTo('thinking', this)">💡 Controllo del Pensiero</button>
+    <button class="nav-pill" onclick="scrollTo('clipower', this)">⌨️ CLI Maestria</button>
+    <button class="nav-pill" onclick="scrollTo('secrets', this)">🔐 Segreti del Sistema</button>
+    <button class="nav-pill" onclick="scrollTo('ultimoliv', this)">👁️ Ultimo Livello</button>
   </div>
 
   <!-- CONTENT -->
@@ -605,7 +625,7 @@
           </div>
           <div class="card-arrow">▼</div>
         </div>
-        <div class="card-body-text">Scrivi <strong style="color:#c8c8d8;">autopilot:</strong> davanti a qualsiasi richiesta per attivare l'esecuzione end-to-end completamente autonoma. Claude decompone il task, delega ai giusti agenti specializzati, verifica i risultati e consegna codice funzionante senza intervento manuale. Esempio: <strong style="color:#c8c8d8;">autopilot: costruisci una REST API per la gestione degli utenti con autenticazione JWT.</strong> Tutto il resto è automatico.</div>
+        <div class="card-body-text">Scrivi <strong style="color:#e8a060;">autopilot:</strong> davanti a qualsiasi richiesta per attivare l'esecuzione end-to-end completamente autonoma. Claude decompone il task, delega ai giusti agenti specializzati, verifica i risultati e consegna codice funzionante senza intervento manuale. Esempio: <strong style="color:#e8a060;">autopilot: costruisci una REST API per la gestione degli utenti con autenticazione JWT.</strong> Tutto il resto è automatico.</div>
       </div>
 
       <div class="card-item" onclick="toggleCard(this)">
@@ -617,7 +637,7 @@
           </div>
           <div class="card-arrow">▼</div>
         </div>
-        <div class="card-body-text">La keyword <strong style="color:#c8c8d8;">ralph:</strong> attiva un loop auto-referenziale persistente: Claude non si ferma finché un architect agent non verifica che il task è davvero completato e corretto. Ideale per refactoring complessi o bug difficili dove le soluzioni a metà strada non servono. Come Sisifo — il masso non smette mai di rotolare. Esempio: <strong style="color:#c8c8d8;">ralph: refactora il sistema di autenticazione.</strong></div>
+        <div class="card-body-text">La keyword <strong style="color:#e8a060;">ralph:</strong> attiva un loop auto-referenziale persistente: Claude non si ferma finché un architect agent non verifica che il task è davvero completato e corretto. Ideale per refactoring complessi o bug difficili dove le soluzioni a metà strada non servono. Come Sisifo — il masso non smette mai di rotolare. Esempio: <strong style="color:#e8a060;">ralph: refactora il sistema di autenticazione.</strong></div>
       </div>
 
       <div class="card-item" onclick="toggleCard(this)">
@@ -629,7 +649,7 @@
           </div>
           <div class="card-arrow">▼</div>
         </div>
-        <div class="card-body-text">La keyword <strong style="color:#c8c8d8;">ulw</strong> (ultrawork) lancia più agenti in parallelo sullo stesso task: 3–5x più veloce sull'implementazione multi-componente. Claude distribuisce il lavoro automaticamente, ogni agente opera su un dominio isolato, i risultati vengono sintetizzati. Esempio: <strong style="color:#c8c8d8;">ulw correggi tutti gli errori TypeScript nel progetto.</strong> Combinato con ralph diventa la modalità più potente disponibile.</div>
+        <div class="card-body-text">La keyword <strong style="color:#e8a060;">ulw</strong> (ultrawork) lancia più agenti in parallelo sullo stesso task: 3–5x più veloce sull'implementazione multi-componente. Claude distribuisce il lavoro automaticamente, ogni agente opera su un dominio isolato, i risultati vengono sintetizzati. Esempio: <strong style="color:#e8a060;">ulw correggi tutti gli errori TypeScript nel progetto.</strong> Combinato con ralph diventa la modalità più potente disponibile.</div>
       </div>
 
       <div class="card-item" onclick="toggleCard(this)">
@@ -641,7 +661,7 @@
           </div>
           <div class="card-arrow">▼</div>
         </div>
-        <div class="card-body-text">Quando hai un'idea vaga, usa <strong style="color:#c8c8d8;">/deep-interview "descrizione vaga"</strong> prima di iniziare a costruire. Claude usa domande socratiche per scoprire assunzioni nascoste, edge case non considerati e requisiti impliciti. Il risultato è una specifica chiara con un punteggio di chiarezza misurato. Costruire su requisiti ambigui è la causa principale di riscritture — questo comando la elimina.</div>
+        <div class="card-body-text">Quando hai un'idea vaga, usa <strong style="color:#e8a060;">/deep-interview "descrizione vaga"</strong> prima di iniziare a costruire. Claude usa domande socratiche per scoprire assunzioni nascoste, edge case non considerati e requisiti impliciti. Il risultato è una specifica chiara con un punteggio di chiarezza misurato. Costruire su requisiti ambigui è la causa principale di riscritture — questo comando la elimina.</div>
       </div>
 
       <div class="card-item" onclick="toggleCard(this)">
@@ -653,7 +673,7 @@
           </div>
           <div class="card-arrow">▼</div>
         </div>
-        <div class="card-body-text">La keyword <strong style="color:#c8c8d8;">team N:executor</strong> lancia N agenti coordinati con una lista di task condivisa e messaggi in real-time. Sostituisce le sessioni parallele manuali con un sistema orchestrato: ogni agente conosce lo stato degli altri e non duplica il lavoro. Esempio: <strong style="color:#c8c8d8;">team 4:executor implementa tutti i test mancanti.</strong> Ideale per task grandi con subtask indipendenti.</div>
+        <div class="card-body-text">La keyword <strong style="color:#e8a060;">team N:executor</strong> lancia N agenti coordinati con una lista di task condivisa e messaggi in real-time. Sostituisce le sessioni parallele manuali con un sistema orchestrato: ogni agente conosce lo stato degli altri e non duplica il lavoro. Esempio: <strong style="color:#e8a060;">team 4:executor implementa tutti i test mancanti.</strong> Ideale per task grandi con subtask indipendenti.</div>
       </div>
 
       <div class="card-item" onclick="toggleCard(this)">
@@ -665,7 +685,7 @@
           </div>
           <div class="card-arrow">▼</div>
         </div>
-        <div class="card-body-text">La keyword <strong style="color:#c8c8d8;">eco:</strong> attiva il routing intelligente dei modelli: Haiku per lookup semplici e task ripetitivi, Sonnet per il lavoro standard, Opus solo dove serve ragionamento profondo. Risparmio reale del 30–50% sul costo dei token senza perdita di qualità percepibile. Usalo per sessioni lunghe, migrazioni di database, o qualsiasi task con molti step ripetitivi. Esempio: <strong style="color:#c8c8d8;">eco: migra tutti i componenti React da class a functional.</strong></div>
+        <div class="card-body-text">La keyword <strong style="color:#e8a060;">eco:</strong> attiva il routing intelligente dei modelli: Haiku per lookup semplici e task ripetitivi, Sonnet per il lavoro standard, Opus solo dove serve ragionamento profondo. Risparmio reale del 30–50% sul costo dei token senza perdita di qualità percepibile. Usalo per sessioni lunghe, migrazioni di database, o qualsiasi task con molti step ripetitivi. Esempio: <strong style="color:#e8a060;">eco: migra tutti i componenti React da class a functional.</strong></div>
       </div>
 
       <div class="card-item" onclick="toggleCard(this)">
@@ -677,7 +697,7 @@
           </div>
           <div class="card-arrow">▼</div>
         </div>
-        <div class="card-body-text">Quando raggiungi il rate limit API, invece di perdere il contesto e ricominciare, usa <strong style="color:#c8c8d8;">omc wait --start</strong> per avviare un daemon tmux che monitora lo stato del limite e riprende automaticamente la sessione quando si resetta. <strong style="color:#c8c8d8;">omc wait</strong> senza flag mostra lo stato attuale e il tempo stimato di recupero. <strong style="color:#c8c8d8;">omc wait --stop</strong> disattiva il daemon. Richiede tmux installato. Essenziale per sessioni di sviluppo lunghe con Autopilot o Ralph attivi.</div>
+        <div class="card-body-text">Quando raggiungi il rate limit API, invece di perdere il contesto e ricominciare, usa <strong style="color:#e8a060;">omc wait --start</strong> per avviare un daemon tmux che monitora lo stato del limite e riprende automaticamente la sessione quando si resetta. <strong style="color:#e8a060;">omc wait</strong> senza flag mostra lo stato attuale e il tempo stimato di recupero. <strong style="color:#e8a060;">omc wait --stop</strong> disattiva il daemon. Richiede tmux installato. Essenziale per sessioni di sviluppo lunghe con Autopilot o Ralph attivi.</div>
       </div>
     </div>
 
@@ -698,7 +718,7 @@
           </div>
           <div class="card-arrow">▼</div>
         </div>
-        <div class="card-body-text">Gli hooks sono comandi shell che si eseguono automaticamente in punti precisi del ciclo di Claude Code: <strong style="color:#c8c8d8;">PreToolUse</strong> (prima di ogni tool call), <strong style="color:#c8c8d8;">PostToolUse</strong> (dopo ogni modifica), <strong style="color:#c8c8d8;">Stop</strong> (prima che Claude finisca). Configurali in <strong style="color:#c8c8d8;">.claude/settings.json</strong>. Esempi pratici: auto-formattare con Prettier ogni file salvato, eseguire TypeScript type-check dopo ogni edit, bloccare comandi pericolosi come <strong style="color:#c8c8d8;">rm -rf</strong> prima che vengano eseguiti. Gli hooks sono l'unica automazione deterministica — non dipendono dall'AI, scattano sempre.</div>
+        <div class="card-body-text">Gli hooks sono comandi shell che si eseguono automaticamente in punti precisi del ciclo di Claude Code: <strong style="color:#e8a060;">PreToolUse</strong> (prima di ogni tool call), <strong style="color:#e8a060;">PostToolUse</strong> (dopo ogni modifica), <strong style="color:#e8a060;">Stop</strong> (prima che Claude finisca). Configurali in <strong style="color:#e8a060;">.claude/settings.json</strong>. Esempi pratici: auto-formattare con Prettier ogni file salvato, eseguire TypeScript type-check dopo ogni edit, bloccare comandi pericolosi come <strong style="color:#e8a060;">rm -rf</strong> prima che vengano eseguiti. Gli hooks sono l'unica automazione deterministica — non dipendono dall'AI, scattano sempre.</div>
       </div>
 
       <div class="card-item" onclick="toggleCard(this)">
@@ -710,7 +730,7 @@
           </div>
           <div class="card-arrow">▼</div>
         </div>
-        <div class="card-body-text">Claude Code chiede conferma per ogni operazione: modificare un file, eseguire un comando, leggere una cartella. Nelle sessioni di automazione lunga questo è paralizzante. Lancia Claude con <strong style="color:#c8c8d8;">claude --dangerously-skip-permissions</strong> per eliminare ogni prompt di conferma. Il nome suona pericoloso ma il rischio reale è basso se usi git checkpoint prima e lavori in un worktree isolato. Ideale per pipeline CI, container Docker, o sessioni notturne autonome dove non puoi supervisionare ogni singolo passo.</div>
+        <div class="card-body-text">Claude Code chiede conferma per ogni operazione: modificare un file, eseguire un comando, leggere una cartella. Nelle sessioni di automazione lunga questo è paralizzante. Lancia Claude con <strong style="color:#e8a060;">claude --dangerously-skip-permissions</strong> per eliminare ogni prompt di conferma. Il nome suona pericoloso ma il rischio reale è basso se usi git checkpoint prima e lavori in un worktree isolato. Ideale per pipeline CI, container Docker, o sessioni notturne autonome dove non puoi supervisionare ogni singolo passo.</div>
       </div>
 
       <div class="card-item" onclick="toggleCard(this)">
@@ -722,7 +742,7 @@
           </div>
           <div class="card-arrow">▼</div>
         </div>
-        <div class="card-body-text">Più sessioni di Claude Code sullo stesso repo si calpestano a vicenda: edits conflittuali, stato git sporco, build rotte. La soluzione è <strong style="color:#c8c8d8;">claude --worktree nome_branch</strong> che crea automaticamente un git worktree isolato — una directory separata collegata allo stesso <strong style="color:#c8c8d8;">.git</strong> ma con il suo albero di file. Ogni sessione ha piena ownership del proprio spazio senza interferire con le altre. Puoi aggiungere <strong style="color:#c8c8d8;">--tmux</strong> per aprirlo automaticamente in un nuovo pannello tmux. Risultato: 3-4 feature sviluppate in parallelo, zero conflitti.</div>
+        <div class="card-body-text">Più sessioni di Claude Code sullo stesso repo si calpestano a vicenda: edits conflittuali, stato git sporco, build rotte. La soluzione è <strong style="color:#e8a060;">claude --worktree nome_branch</strong> che crea automaticamente un git worktree isolato — una directory separata collegata allo stesso <strong style="color:#e8a060;">.git</strong> ma con il suo albero di file. Ogni sessione ha piena ownership del proprio spazio senza interferire con le altre. Puoi aggiungere <strong style="color:#e8a060;">--tmux</strong> per aprirlo automaticamente in un nuovo pannello tmux. Risultato: 3-4 feature sviluppate in parallelo, zero conflitti.</div>
       </div>
 
       <div class="card-item" onclick="toggleCard(this)">
@@ -734,7 +754,7 @@
           </div>
           <div class="card-arrow">▼</div>
         </div>
-        <div class="card-body-text"><strong style="color:#c8c8d8;">claude -p "prompt"</strong> esegue Claude in modalità non-interattiva: niente sessione, niente conferme, risposta diretta su stdout. Integrabile ovunque: pipeline GitHub Actions, pre-commit hook, script bash, webhook. Aggiungi <strong style="color:#c8c8d8;">--output-format json</strong> per output parsabile da altri script, o <strong style="color:#c8c8d8;">--output-format stream-json</strong> per processing in real-time. Esempi: analisi automatica di log di errore ad ogni deploy, generazione changelog da git diff, review automatica di ogni PR aperta. La modalità non-interattiva trasforma Claude da strumento interattivo in API autonoma.</div>
+        <div class="card-body-text"><strong style="color:#e8a060;">claude -p "prompt"</strong> esegue Claude in modalità non-interattiva: niente sessione, niente conferme, risposta diretta su stdout. Integrabile ovunque: pipeline GitHub Actions, pre-commit hook, script bash, webhook. Aggiungi <strong style="color:#e8a060;">--output-format json</strong> per output parsabile da altri script, o <strong style="color:#e8a060;">--output-format stream-json</strong> per processing in real-time. Esempi: analisi automatica di log di errore ad ogni deploy, generazione changelog da git diff, review automatica di ogni PR aperta. La modalità non-interattiva trasforma Claude da strumento interattivo in API autonoma.</div>
       </div>
 
       <div class="card-item" onclick="toggleCard(this)">
@@ -746,7 +766,7 @@
           </div>
           <div class="card-arrow">▼</div>
         </div>
-        <div class="card-body-text">Prima di usare <strong style="color:#c8c8d8;">/compact</strong> o aprire una nuova sessione, chiedi: <strong style="color:#c8c8d8;">"Scrivi un file HANDOFF.md con: cosa stavamo costruendo, cosa hai provato, cosa ha funzionato, cosa non ha funzionato, e i prossimi passi esatti. Il prossimo agente leggerà solo questo file."</strong> Poi inizia una sessione fresca passando solo il percorso del file. Claude lo legge e riprende da dove avevi lasciato con zero degrado di qualità. Aggiorna il documento a ogni sessione successiva. Il contesto critico non si perde mai più in auto-compaction o session timeout.</div>
+        <div class="card-body-text">Prima di usare <strong style="color:#e8a060;">/compact</strong> o aprire una nuova sessione, chiedi: <strong style="color:#e8a060;">"Scrivi un file HANDOFF.md con: cosa stavamo costruendo, cosa hai provato, cosa ha funzionato, cosa non ha funzionato, e i prossimi passi esatti. Il prossimo agente leggerà solo questo file."</strong> Poi inizia una sessione fresca passando solo il percorso del file. Claude lo legge e riprende da dove avevi lasciato con zero degrado di qualità. Aggiorna il documento a ogni sessione successiva. Il contesto critico non si perde mai più in auto-compaction o session timeout.</div>
       </div>
 
       <div class="card-item" onclick="toggleCard(this)">
@@ -758,7 +778,7 @@
           </div>
           <div class="card-arrow">▼</div>
         </div>
-        <div class="card-body-text">Quando vuoi provare un approccio diverso da un punto preciso della conversazione senza perdere il thread originale, usa <strong style="color:#c8c8d8;">/fork</strong> dall'interno della sessione, oppure <strong style="color:#c8c8d8;">claude -c --fork-session</strong> dall'esterno. Crea una copia della conversazione con nuovi UUID: puoi esplorare una direzione alternativa nella copia mentre il branch originale rimane intatto. Ideale quando Claude ha preso una strada sbagliata e vuoi ricominciare da un checkpoint specifico senza perdere tutto il contesto precedente.</div>
+        <div class="card-body-text">Quando vuoi provare un approccio diverso da un punto preciso della conversazione senza perdere il thread originale, usa <strong style="color:#e8a060;">/fork</strong> dall'interno della sessione, oppure <strong style="color:#e8a060;">claude -c --fork-session</strong> dall'esterno. Crea una copia della conversazione con nuovi UUID: puoi esplorare una direzione alternativa nella copia mentre il branch originale rimane intatto. Ideale quando Claude ha preso una strada sbagliata e vuoi ricominciare da un checkpoint specifico senza perdere tutto il contesto precedente.</div>
       </div>
 
       <div class="card-item" onclick="toggleCard(this)">
@@ -770,7 +790,7 @@
           </div>
           <div class="card-arrow">▼</div>
         </div>
-        <div class="card-body-text">Il pattern più avanzato: la tua sessione Claude Code locale controlla un'altra istanza di Claude Code che gira dentro un container Docker. La tua sessione usa <strong style="color:#c8c8d8;">tmux send-keys</strong> per inviare prompt al container e <strong style="color:#c8c8d8;">capture-pane</strong> per leggere i risultati. Il worker interno gira con <strong style="color:#c8c8d8;">--dangerously-skip-permissions</strong>. Usi: eseguire task sperimentali e lunghi senza approvare ogni azione, orchestrare modelli diversi (Codex, Gemini CLI) dallo stesso punto di controllo, isolare task rischiosi in sandbox. Se il worker rompe qualcosa, il container è l'unico a soffrire.</div>
+        <div class="card-body-text">Il pattern più avanzato: la tua sessione Claude Code locale controlla un'altra istanza di Claude Code che gira dentro un container Docker. La tua sessione usa <strong style="color:#e8a060;">tmux send-keys</strong> per inviare prompt al container e <strong style="color:#e8a060;">capture-pane</strong> per leggere i risultati. Il worker interno gira con <strong style="color:#e8a060;">--dangerously-skip-permissions</strong>. Usi: eseguire task sperimentali e lunghi senza approvare ogni azione, orchestrare modelli diversi (Codex, Gemini CLI) dallo stesso punto di controllo, isolare task rischiosi in sandbox. Se il worker rompe qualcosa, il container è l'unico a soffrire.</div>
       </div>
 
       <div class="card-item" onclick="toggleCard(this)">
@@ -782,7 +802,7 @@
           </div>
           <div class="card-arrow">▼</div>
         </div>
-        <div class="card-body-text">Quando un bug è comparso "a un certo punto" senza sapere quando: chiedi a Claude di automatizzare <strong style="color:#c8c8d8;">git bisect</strong> usando tmux come layer di controllo. Claude crea una sessione tmux di test, ci invia comandi per verificare ogni commit, legge il risultato, e ripete finché non isola il commit colpevole. Tutto automatico, zero interazione manuale. Per funzionare hai bisogno di uno script di test che ritorni exit code 0 (ok) o 1 (bug presente) — Claude può scriverlo per te prima di iniziare la bisezione. Tecnica che trasforma ore di debug manuale in minuti.</div>
+        <div class="card-body-text">Quando un bug è comparso "a un certo punto" senza sapere quando: chiedi a Claude di automatizzare <strong style="color:#e8a060;">git bisect</strong> usando tmux come layer di controllo. Claude crea una sessione tmux di test, ci invia comandi per verificare ogni commit, legge il risultato, e ripete finché non isola il commit colpevole. Tutto automatico, zero interazione manuale. Per funzionare hai bisogno di uno script di test che ritorni exit code 0 (ok) o 1 (bug presente) — Claude può scriverlo per te prima di iniziare la bisezione. Tecnica che trasforma ore di debug manuale in minuti.</div>
       </div>
     </div>
 
@@ -803,7 +823,7 @@
           </div>
           <div class="card-arrow">▼</div>
         </div>
-        <div class="card-body-text"><strong style="color:#c8c8d8;">/loop</strong> schedula un prompt ricorrente che Claude esegue in autonomia per fino a 3 giorni. Esempi reali: <strong style="color:#c8c8d8;">/loop controlla tutte le mie PR aperte. Auto-fixa i build rotti e quando arrivano commenti usa un worktree agent per rispondere.</strong> Oppure: <strong style="color:#c8c8d8;">/loop ogni mattina usa lo Slack MCP per darmi un riassunto dei post dove sono stato taggato.</strong> <strong style="color:#c8c8d8;">/schedule</strong> funziona allo stesso modo ma per task one-shot nel futuro. Insieme trasformano Claude da assistente reattivo in agente proattivo che lavora mentre dormi.</div>
+        <div class="card-body-text"><strong style="color:#e8a060;">/loop</strong> schedula un prompt ricorrente che Claude esegue in autonomia per fino a 3 giorni. Esempi reali: <strong style="color:#e8a060;">/loop controlla tutte le mie PR aperte. Auto-fixa i build rotti e quando arrivano commenti usa un worktree agent per rispondere.</strong> Oppure: <strong style="color:#e8a060;">/loop ogni mattina usa lo Slack MCP per darmi un riassunto dei post dove sono stato taggato.</strong> <strong style="color:#e8a060;">/schedule</strong> funziona allo stesso modo ma per task one-shot nel futuro. Insieme trasformano Claude da assistente reattivo in agente proattivo che lavora mentre dormi.</div>
       </div>
 
       <div class="card-item" onclick="toggleCard(this)">
@@ -815,7 +835,7 @@
           </div>
           <div class="card-arrow">▼</div>
         </div>
-        <div class="card-body-text">Quando Claude sta lavorando su un task lungo e vuoi fare una domanda senza spezzare il suo flusso, usa <strong style="color:#c8c8d8;">/btw la tua domanda</strong>. Claude risponde alla domanda e poi riprende esattamente da dove si era fermato, senza perdere il contesto dell'implementazione in corso. Senza <strong style="color:#c8c8d8;">/btw</strong> ogni domanda rischia di deviare la sessione o di far perdere il filo al modello. Con <strong style="color:#c8c8d8;">/btw</strong> puoi supervisionare attivamente un task lungo senza sabotarlo — chiedere chiarimenti, verificare scelte, approvare direzioni — mentre Claude continua a costruire.</div>
+        <div class="card-body-text">Quando Claude sta lavorando su un task lungo e vuoi fare una domanda senza spezzare il suo flusso, usa <strong style="color:#e8a060;">/btw la tua domanda</strong>. Claude risponde alla domanda e poi riprende esattamente da dove si era fermato, senza perdere il contesto dell'implementazione in corso. Senza <strong style="color:#e8a060;">/btw</strong> ogni domanda rischia di deviare la sessione o di far perdere il filo al modello. Con <strong style="color:#e8a060;">/btw</strong> puoi supervisionare attivamente un task lungo senza sabotarlo — chiedere chiarimenti, verificare scelte, approvare direzioni — mentre Claude continua a costruire.</div>
       </div>
 
       <div class="card-item" onclick="toggleCard(this)">
@@ -827,7 +847,7 @@
           </div>
           <div class="card-arrow">▼</div>
         </div>
-        <div class="card-body-text">Crea agenti personalizzati mettendo file <strong style="color:#c8c8d8;">.md</strong> nella cartella <strong style="color:#c8c8d8;">.claude/agents/</strong>. Ogni agente ha nome, colore, set di tool permessi, modello dedicato e prompt di sistema. Esempio di agente read-only per code review che non può modificare file. Esempio di agente security-only con accesso solo a Read e Grep. Lancia un agente con <strong style="color:#c8c8d8;">claude --agent=nome</strong> o aggiungi <strong style="color:#c8c8d8;">"agent": "nome"</strong> in settings.json per farne il default. Aggiungi <strong style="color:#c8c8d8;">"use subagents"</strong> a qualsiasi richiesta per spingere Claude a delegare a subagenti paralleli — più compute sul problema.</div>
+        <div class="card-body-text">Crea agenti personalizzati mettendo file <strong style="color:#e8a060;">.md</strong> nella cartella <strong style="color:#e8a060;">.claude/agents/</strong>. Ogni agente ha nome, colore, set di tool permessi, modello dedicato e prompt di sistema. Esempio di agente read-only per code review che non può modificare file. Esempio di agente security-only con accesso solo a Read e Grep. Lancia un agente con <strong style="color:#e8a060;">claude --agent=nome</strong> o aggiungi <strong style="color:#e8a060;">"agent": "nome"</strong> in settings.json per farne il default. Aggiungi <strong style="color:#e8a060;">"use subagents"</strong> a qualsiasi richiesta per spingere Claude a delegare a subagenti paralleli — più compute sul problema.</div>
       </div>
 
       <div class="card-item" onclick="toggleCard(this)">
@@ -839,7 +859,7 @@
           </div>
           <div class="card-arrow">▼</div>
         </div>
-        <div class="card-body-text">Stai lavorando su un task lungo al terminale e devi uscire? <strong style="color:#c8c8d8;">claude --teleport</strong> (oppure <strong style="color:#c8c8d8;">/teleport</strong> dall'interno di una sessione) sposta la sessione cloud sul tuo dispositivo attuale — o viceversa. Puoi continuare la stessa sessione dal telefono, dal browser, dal desktop o dal terminale senza perdere nulla. <strong style="color:#c8c8d8;">/remote-control</strong> ti permette di controllare una sessione locale dal telefono o dal web. Disponibile su piani Pro, Max, Team, Enterprise dalla CLI v2.1.51 in poi. Il contesto, la cronologia e i file rimangono esattamente dove li avevi lasciati.</div>
+        <div class="card-body-text">Stai lavorando su un task lungo al terminale e devi uscire? <strong style="color:#e8a060;">claude --teleport</strong> (oppure <strong style="color:#e8a060;">/teleport</strong> dall'interno di una sessione) sposta la sessione cloud sul tuo dispositivo attuale — o viceversa. Puoi continuare la stessa sessione dal telefono, dal browser, dal desktop o dal terminale senza perdere nulla. <strong style="color:#e8a060;">/remote-control</strong> ti permette di controllare una sessione locale dal telefono o dal web. Disponibile su piani Pro, Max, Team, Enterprise dalla CLI v2.1.51 in poi. Il contesto, la cronologia e i file rimangono esattamente dove li avevi lasciati.</div>
       </div>
 
       <div class="card-item" onclick="toggleCard(this)">
@@ -851,7 +871,7 @@
           </div>
           <div class="card-arrow">▼</div>
         </div>
-        <div class="card-body-text">Claude Code ha un input vocale nativo: digita <strong style="color:#c8c8d8;">/voice</strong> per attivarlo. Parlare è 3–5x più veloce che digitare per la maggior parte delle persone, soprattutto per prompt lunghi e descrizioni complesse. Claude è abbastanza intelligente da interpretare trascrizioni imperfette — anche parole sbagliate vengono capite dal contesto. Per chi vuole il massimo controllo: tools come SuperWhisper o MacWhisper girano in locale con modelli Whisper e si integrano a qualsiasi app. Usare la voce in ufficio è più semplice del previsto — basta un auricolare e parlare sottovoce. Funziona anche in aereo.</div>
+        <div class="card-body-text">Claude Code ha un input vocale nativo: digita <strong style="color:#e8a060;">/voice</strong> per attivarlo. Parlare è 3–5x più veloce che digitare per la maggior parte delle persone, soprattutto per prompt lunghi e descrizioni complesse. Claude è abbastanza intelligente da interpretare trascrizioni imperfette — anche parole sbagliate vengono capite dal contesto. Per chi vuole il massimo controllo: tools come SuperWhisper o MacWhisper girano in locale con modelli Whisper e si integrano a qualsiasi app. Usare la voce in ufficio è più semplice del previsto — basta un auricolare e parlare sottovoce. Funziona anche in aereo.</div>
       </div>
 
       <div class="card-item" onclick="toggleCard(this)">
@@ -863,7 +883,7 @@
           </div>
           <div class="card-arrow">▼</div>
         </div>
-        <div class="card-body-text">Esegui <strong style="color:#c8c8d8;">/install-github-app</strong> una sola volta per connettere Claude Code al tuo repository GitHub. Da quel momento Claude analizza automaticamente ogni PR aperta, trova bug e vulnerabilità di sicurezza, e lascia commenti inline direttamente sulla pull request — senza che tu debba fare nulla. La chiave è personalizzare il file <strong style="color:#c8c8d8;">claude-code-review.yml</strong>: di default è verboso e commenta ogni minuzia. Con un prompt mirato ("segnala solo bug e vulnerabilità, sii conciso") il segnale diventa altissimo. Con l'AI che genera più codice il volume di PR aumenta — questa automazione scala con te.</div>
+        <div class="card-body-text">Esegui <strong style="color:#e8a060;">/install-github-app</strong> una sola volta per connettere Claude Code al tuo repository GitHub. Da quel momento Claude analizza automaticamente ogni PR aperta, trova bug e vulnerabilità di sicurezza, e lascia commenti inline direttamente sulla pull request — senza che tu debba fare nulla. La chiave è personalizzare il file <strong style="color:#e8a060;">claude-code-review.yml</strong>: di default è verboso e commenta ogni minuzia. Con un prompt mirato ("segnala solo bug e vulnerabilità, sii conciso") il segnale diventa altissimo. Con l'AI che genera più codice il volume di PR aumenta — questa automazione scala con te.</div>
       </div>
 
       <div class="card-item" onclick="toggleCard(this)">
@@ -875,43 +895,646 @@
           </div>
           <div class="card-arrow">▼</div>
         </div>
-        <div class="card-body-text">Ogni MCP server configurato carica le sue tool definitions in ogni conversazione fin dall'inizio — anche se non lo usi mai. Con 3–4 MCP attivi puoi perdere 30–50k token di context window prima di scrivere una riga. La soluzione è aggiungere a <strong style="color:#c8c8d8;">~/.claude/settings.json</strong> la chiave <strong style="color:#c8c8d8;">"ENABLE_TOOL_SEARCH": "true"</strong> nel blocco <strong style="color:#c8c8d8;">env</strong>. Claude caricherà i tool MCP solo quando servono davvero, on-demand. Dalla versione 2.1.7 questo avviene automaticamente se le tool descriptions superano il 10% del context. Abbina questo a <strong style="color:#c8c8d8;">CLAUDE_CODE_SUBAGENT_MODEL: "haiku"</strong> per ottimizzare anche il costo dei subagenti meccanici.</div>
+        <div class="card-body-text">Ogni MCP server configurato carica le sue tool definitions in ogni conversazione fin dall'inizio — anche se non lo usi mai. Con 3–4 MCP attivi puoi perdere 30–50k token di context window prima di scrivere una riga. La soluzione è aggiungere a <strong style="color:#e8a060;">~/.claude/settings.json</strong> la chiave <strong style="color:#e8a060;">"ENABLE_TOOL_SEARCH": "true"</strong> nel blocco <strong style="color:#e8a060;">env</strong>. Claude caricherà i tool MCP solo quando servono davvero, on-demand. Dalla versione 2.1.7 questo avviene automaticamente se le tool descriptions superano il 10% del context. Abbina questo a <strong style="color:#e8a060;">CLAUDE_CODE_SUBAGENT_MODEL: "haiku"</strong> per ottimizzare anche il costo dei subagenti meccanici.</div>
       </div>
     </div>
 
-    <!-- SETUP BOX -->
-    <div style="margin-top:16px; background:linear-gradient(135deg, rgba(232,255,90,0.04), rgba(90,255,210,0.02)); border:1px solid rgba(232,255,90,0.15); border-radius:14px; padding:36px 32px;">
-      <div style="font-family:'Playfair Display',serif; font-size:22px; color:#e8ff5a; margin-bottom:8px;">Il Setup che Lega Tutto</div>
-      <p style="font-family:'Lato',sans-serif; font-weight:300; font-size:13px; color:#4a4a5e; margin-bottom:28px; line-height:1.6;">
-        Quando inizi un nuovo progetto, esegui questa sequenza. Cinque minuti di setup trasformano ogni ora successiva di sviluppo.
-      </p>
-      <div class="setup-step">
-        <div class="step-num">1</div>
-        <div class="step-text"><strong>/init</strong> — genera il file CLAUDE.md</div>
+    <!-- SECTION 9: TECNICHE DA COMUNITÀ -->
+    <div class="section-block" id="community">
+      <div class="section-header">
+        <div class="section-icon-box" style="background:rgba(255,160,100,0.08);">🌐</div>
+        <div class="section-title">Tecniche da Comunità</div>
+        <div class="section-range">58 – 65</div>
       </div>
-      <div class="setup-step">
-        <div class="step-num">2</div>
-        <div class="step-text"><strong>Standard di codice</strong> — aggiungi i tuoi pattern al CLAUDE.md</div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">58</div>
+          <div class="card-title-wrap">
+            <span class="card-title">System Prompt Patching — -50% di Overhead</span>
+            <span class="card-tag" style="background:rgba(255,160,100,0.08); color:#ffa064;">system-prompt/</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Il system prompt di Claude Code occupa circa 19k token (~10% della context window da 200k) <em>prima che tu scriva una parola</em>. La repo <strong style="color:#e8a060;">ykdojo/claude-code-tips</strong> include script che patchano il bundle CLI minificato, riducendo il tutto a ~9k token — risparmio del 50% sull'overhead statico. Le patch tagliano esempi verbosi e testo ridondante mantenendo tutte le istruzioni essenziali. Il risultato: inizi ogni sessione con molto più spazio, le conversazioni durano più a lungo senza degrado. Bisogna riapplicare le patch ad ogni aggiornamento di Claude Code, ma gli script includono anche istruzioni per farlo in container automaticamente.</div>
       </div>
-      <div class="setup-step">
-        <div class="step-num">3</div>
-        <div class="step-text"><strong>/memory</strong> — aggiungi regole persistenti per ogni sessione</div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">59</div>
+          <div class="card-title-wrap">
+            <span class="card-title">Status Line Personalizzata — Visibilità Totale</span>
+            <span class="card-tag" style="background:rgba(255,160,100,0.08); color:#ffa064;">context-bar.sh</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Claude Code mostra una barra di stato configurabile in fondo allo schermo. Con lo script <strong style="color:#e8a060;">context-bar.sh</strong> (repo ykdojo) la barra mostra in tempo reale: modello attivo, directory corrente, branch git, numero di file non committati, stato di sync con origin, barra di avanzamento visiva dei token usati (es. <strong style="color:#e8a060;">██░░░░░░░░ 18% of 200k tokens</strong>) e l'ultimo messaggio inviato. Supporta 10 temi di colore. Usalo con <strong style="color:#e8a060;">/context</strong> per un breakdown esatto dei token. Sapere in tempo reale quanto contesto rimane trasforma la gestione della sessione da reattiva a proattiva — sai quando compattare prima che la qualità cali.</div>
       </div>
-      <div class="setup-step">
-        <div class="step-num">4</div>
-        <div class="step-text"><strong>Modalità Piano</strong> — progetta l'architettura prima di scrivere codice</div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">60</div>
+          <div class="card-title-wrap">
+            <span class="card-title">Gemini CLI come Minion — 1 Milione di Token</span>
+            <span class="card-tag" style="background:rgba(255,160,100,0.08); color:#ffa064;">Gemini CLI + tmux</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Claude Code ha 200k token di contesto. Gemini ha 1 milione. Usali insieme: metti Gemini CLI in un pannello tmux e fai sì che Claude gli deleghi task di lettura massiva del codebase. <strong style="color:#e8a060;">Esempio:</strong> Claude usa <strong style="color:#e8a060;">tmux send-keys</strong> per chiedere a Gemini di leggere l'intera codebase (500+ file) e rispondere a domande architetturali — poi Claude usa quelle risposte per scrivere il codice. Claude resta il coordinatore e il costruttore; Gemini diventa il motore di lettura per dataset troppo grandi. Il workflow Reddit Research (ykdojo Tip 11) usa questa stessa architettura per scraping e analisi di dati su Reddit in autonomia.</div>
       </div>
-      <div class="setup-step">
-        <div class="step-num">5</div>
-        <div class="step-text"><strong>Build incrementale</strong> — una feature alla volta, testata ad ogni passo</div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">61</div>
+          <div class="card-title-wrap">
+            <span class="card-title">Riprendi la Sessione — Zero Context Warmup</span>
+            <span class="card-tag" style="background:rgba(255,160,100,0.08); color:#ffa064;">claude --resume</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text"><strong style="color:#e8a060;">claude --resume</strong> riapre l'ultima sessione esattamente da dove l'avevi lasciata — tutta la cronologia, i file letti, le decisioni prese, tutto intatto. Senza questo flag ogni nuova sessione riparte da zero e Claude deve rileggere il codebase da capo (context warmup tax). Usa <strong style="color:#e8a060;">claude --resume [session-id]</strong> per riprendere una sessione specifica. <strong style="color:#e8a060;">claude -l</strong> lista tutte le sessioni recenti con ID, modello usato e timestamp. Abbinato al HANDOFF.md diventa la tecnica più potente per lavorare su task multi-giorno senza perdere mai il filo.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">62</div>
+          <div class="card-title-wrap">
+            <span class="card-title">Rules Directory — Contesto Lazy-Loaded per File</span>
+            <span class="card-tag" style="background:rgba(255,160,100,0.08); color:#ffa064;">.claude/rules/</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Invece di mettere tutto in CLAUDE.md (che si carica sempre, in ogni sessione), usa <strong style="color:#e8a060;">.claude/rules/*.md</strong> con YAML frontmatter. Ogni file di regole ha un campo <strong style="color:#e8a060;">paths:</strong> che indica per quali file o directory si attiva. Esempio: <strong style="color:#e8a060;">paths: ["src/api/**"]</strong> carica quelle regole solo quando Claude tocca file in src/api/. Le regole per il frontend non inquinano il contesto quando lavori sul backend. Senza frontmatter i file si comportano come CLAUDE.md (sempre caricati). Con frontmatter si caricano solo quando servono. Risultato: context window più pulita, regole più specifiche, zero overhead quando non pertinenti.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">63</div>
+          <div class="card-title-wrap">
+            <span class="card-title">Challenge Claude — Non Accettare la Prima Risposta</span>
+            <span class="card-tag" style="background:rgba(255,160,100,0.08); color:#ffa064;">sfida attiva</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Tre frasi che migliorano drasticamente la qualità del codice generato, dalla community shanraisshan. Dopo un'implementazione mediocre: <strong style="color:#e8a060;">"conoscendo tutto quello che sai ora, butta questo e implementa la soluzione elegante."</strong> Dopo una fix: <strong style="color:#e8a060;">"grillami su questi cambiamenti e non fare la PR finché non passo il tuo test."</strong> Quando vuoi certezza: <strong style="color:#e8a060;">"provami che funziona"</strong> e fai fare a Claude il diff tra main e il tuo branch. Claude tende a fermarsi alla prima soluzione che funziona. Queste frasi attivano una rivalutazione critica che quasi sempre produce codice più pulito e robusto. La qualità AI è spesso proporzionale alla pressione che applichi.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">64</div>
+          <div class="card-title-wrap">
+            <span class="card-title">/gha — Investigatore di GitHub Actions</span>
+            <span class="card-tag" style="background:rgba(255,160,100,0.08); color:#ffa064;">/gha &lt;url&gt;</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Slash command della community (ykdojo dx plugin): esegui <strong style="color:#e8a060;">/gha &lt;url&gt;</strong> con qualsiasi URL di un workflow GitHub Actions fallito. Claude indaga automaticamente: analizza i log di errore, verifica se il problema è flaky (intermittente), identifica il commit che ha introdotto il fallimento, e suggerisce le correzioni specifiche. Zero analisi manuale dei log. Installabile via <strong style="color:#e8a060;">claude /dx</strong> dal plugin marketplace. Abbinato a <strong style="color:#e8a060;">gh</strong> CLI per creare una draft PR con la fix proposta è il workflow completo: URL fallito → analisi → PR con correzione in meno di un minuto.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">65</div>
+          <div class="card-title-wrap">
+            <span class="card-title">Soglie di Contesto — Quando Agire e Come</span>
+            <span class="card-tag" style="background:rgba(255,160,100,0.08); color:#ffa064;">/context</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">La qualità di Claude degrada in modo non lineare al riempirsi del contesto. Le soglie esatte dalla community (FlorianBruniaux ultimate guide): <strong style="color:#e8a060;">0–50%</strong> lavora liberamente. <strong style="color:#e8a060;">50–70%</strong> inizia a monitorare, evita di leggere file grandi non necessari. <strong style="color:#e8a060;">70–90%</strong> usa <strong style="color:#e8a060;">/compact</strong> al prossimo stopping point: Claude inizia a perdere precisione. <strong style="color:#e8a060;">90%+</strong> <strong style="color:#e8a060;">/clear obbligatorio</strong>: le risposte diventano erratiche. Controlla con <strong style="color:#e8a060;">/context</strong> per il breakdown preciso o usa la status line per monitoraggio continuo. Agire preventivamente a 70% è sempre meglio che aspettare il degrado a 90%.</div>
       </div>
     </div>
+
+    <!-- SECTION 10: ARCHITETTURA AVANZATA -->
+    <div class="section-block" id="architecture2">
+      <div class="section-header">
+        <div class="section-icon-box" style="background:rgba(180,255,140,0.08);">🧠</div>
+        <div class="section-title">Architettura Avanzata</div>
+        <div class="section-range">66 – 70</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">66</div>
+          <div class="card-title-wrap">
+            <span class="card-title">Spec-First con AskUserQuestion — Specifica Prima di Costruire</span>
+            <span class="card-tag" style="background:rgba(180,255,140,0.08); color:#b4ff8c;">SPEC.md</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Il workflow più raccomandato dalla documentazione ufficiale Anthropic per feature complesse: <strong style="color:#e8a060;">"voglio costruire [descrizione minima]. Intervistami in dettaglio usando il tool AskUserQuestion. Chiedi implementazione tecnica, UX, edge case, tradeoff. Non fare domande ovvie — scava nelle parti difficili che potrei non aver considerato. Continua a intervistare finché non abbiamo coperto tutto, poi scrivi una specifica completa in SPEC.md."</strong> Poi apri una sessione fresca passando solo SPEC.md. La nuova sessione ha contesto pulito focalizzato sull'implementazione e una specifica scritta come riferimento. Zero ambiguità, zero riscritture per requisiti mal capiti.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">67</div>
+          <div class="card-title-wrap">
+            <span class="card-title">settings.json Deterministico vs CLAUDE.md</span>
+            <span class="card-tag" style="background:rgba(180,255,140,0.08); color:#b4ff8c;">settings.json</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">CLAUDE.md usa linguaggio naturale — Claude può interpretarlo, ignorarlo, o applicarlo in modo inconsistente. <strong style="color:#e8a060;">settings.json</strong> è deterministico: viene letto dal runtime, non dal modello. La regola pratica dalla community shanraisshan: se vuoi che qualcosa avvenga <em>sempre senza eccezioni</em>, mettilo in settings.json. Esempi: <strong style="color:#e8a060;">attribution.commit: ""</strong> disabilita il "Co-Authored-By" in modo affidabile (invece di scrivere "NEVER add Co-Authored-By" in CLAUDE.md e sperare). <strong style="color:#e8a060;">permissions.allow</strong> e <strong style="color:#e8a060;">permissions.deny</strong> controllano i tool in modo assoluto. <strong style="color:#e8a060;">model</strong> fissa il modello. <strong style="color:#e8a060;">CLAUDE_CODE_SUBAGENT_MODEL</strong> fissa il modello per i subagenti. Usa CLAUDE.md per stile e contesto. Usa settings.json per comportamento critico.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">68</div>
+          <div class="card-title-wrap">
+            <span class="card-title">context:fork nelle Skill — Contesto Isolato</span>
+            <span class="card-tag" style="background:rgba(180,255,140,0.08); color:#b4ff8c;">context: fork</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Quando una skill compie molte operazioni intermedie (legge decine di file, esegue comandi, itera) tutto quel rumore inquina il contesto principale della tua sessione. Aggiungi <strong style="color:#e8a060;">context: fork</strong> nel frontmatter YAML della skill per eseguirla in un subagente isolato. Il contesto principale vede <em>solo il risultato finale</em> — niente tool calls intermedie, niente file letti, niente output di comandi. La skill può fare tutto il lavoro sporco che vuole nel suo contesto senza pagare il costo in token nella sessione principale. Abbinalo a <strong style="color:#e8a060;">disable-model-invocation: true</strong> per skill con side-effect che vuoi triggherare manualmente con certezza.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">69</div>
+          <div class="card-title-wrap">
+            <span class="card-title">/plugin — Il Marketplace della Community</span>
+            <span class="card-tag" style="background:rgba(180,255,140,0.08); color:#b4ff8c;">/plugin</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Esegui <strong style="color:#e8a060;">/plugin</strong> per sfogliare e installare plugin dalla community senza configurazione manuale. I plugin bundlano skill, subagenti, hooks, MCP server e LSP server in un'unica installazione. Plugin degni di nota: <strong style="color:#e8a060;">dx</strong> (ykdojo) bundla handoff, gha, clone e reddit-fetch. <strong style="color:#e8a060;">claude-forge</strong> (sangrokjung) aggiunge 11 agenti specializzati, 40 comandi e 15 skill workflows. <strong style="color:#e8a060;">Dippy</strong> usa AST-parsing per auto-approvare comandi bash sicuri e chiedere conferma solo per quelli distruttivi — elimina la permission fatigue senza disabilitare le protezioni. <strong style="color:#e8a060;">TDD Guard</strong> blocca modifiche che violano i principi TDD in real-time tramite hooks.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">70</div>
+          <div class="card-title-wrap">
+            <span class="card-title">RIPER — Il Workflow Strutturato Definitivo</span>
+            <span class="card-tag" style="background:rgba(180,255,140,0.08); color:#b4ff8c;">Research→Plan→Execute</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">RIPER (Research, Innovate, Plan, Execute, Review) è un workflow strutturato della community che impone separazione netta tra le fasi. <strong style="color:#e8a060;">Research:</strong> Claude legge il codebase senza scrivere nulla. <strong style="color:#e8a060;">Innovate:</strong> genera opzioni architetturali, niente implementazione. <strong style="color:#e8a060;">Plan:</strong> scrive un piano dettagliato con test per ogni step (modalità piano). <strong style="color:#e8a060;">Execute:</strong> implementa esattamente il piano approvato, un passo alla volta. <strong style="color:#e8a060;">Review:</strong> un secondo subagente valuta ogni passo dell'implementazione. La separazione impedisce a Claude di saltare alla "soluzione ovvia" senza capire il problema. Include un memory bank branch-aware per mantenere le decisioni tra sessioni e "strict mode" per forzare il rispetto delle fasi. Il risultato più affidabile per feature complesse in codebase grandi.</div>
+      </div>
+    </div>
+
+    <!-- SECTION 11: CONTROLLO DEL PENSIERO -->
+    <div class="section-block" id="thinking">
+      <div class="section-header">
+        <div class="section-icon-box" style="background:rgba(200,150,255,0.08);">💡</div>
+        <div class="section-title">Controllo del Pensiero</div>
+        <div class="section-range">71 – 75</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">71</div>
+          <div class="card-title-wrap">
+            <span class="card-title">Gerarchia di Pensiero — 4 Livelli di Ragionamento</span>
+            <span class="card-tag" style="background:rgba(200,150,255,0.08); color:#c896ff;">ultrathink</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Claude Code ha quattro livelli di reasoning attivabili con parole chiave nel prompt, mappate internamente a budget di token di pensiero crescenti. <strong style="color:#e8a060;">think</strong> (~4k token): attiva il ragionamento base, per task con più variabili. <strong style="color:#e8a060;">think hard</strong> o <strong style="color:#e8a060;">megathink</strong> (~10k token): analisi più profonda, buono per refactoring e debugging complesso. <strong style="color:#e8a060;">think harder</strong> o <strong style="color:#e8a060;">ultrathink</strong> (~32k token): budget massimo, per decisioni architetturali, race condition, migration planning, security review. La keyword può stare ovunque nel prompt. Funziona <em>solo in Claude Code CLI</em> — nel web chat sono parole normali. Reintrodotto in v2.1.68 (marzo 2026). Costa significativamente più token: usalo per i problemi che lo meritano davvero.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">72</div>
+          <div class="card-title-wrap">
+            <span class="card-title">/effort — Profondità di Ragionamento per Sessione</span>
+            <span class="card-tag" style="background:rgba(200,150,255,0.08); color:#c896ff;">/effort xhigh</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text"><strong style="color:#e8a060;">/effort</strong> senza argomenti apre uno slider interattivo con frecce + Invio. <strong style="color:#e8a060;">/effort low</strong> è veloce e economico — perfetto per rinominare variabili, aggiornare doc, edit meccanici. <strong style="color:#e8a060;">/effort medium</strong> è il default bilanciato. <strong style="color:#e8a060;">/effort high</strong> attiva extended thinking — per architettura, debug complesso, security review. <strong style="color:#e8a060;">/effort xhigh</strong> (Opus 4.7 in poi) è tra high e max. La differenza con ultrathink: <strong style="color:#e8a060;">/effort</strong> è l'impostazione ufficiale persistente per tutta la sessione; ultrathink è il trigger rapido per un singolo prompt senza cambiare il livello globale. Usa <strong style="color:#e8a060;">Alt+T</strong> per toggleare il pensiero esteso on/off a metà sessione senza digitare nulla. Imposta <strong style="color:#e8a060;">CLAUDE_CODE_EFFORT_LEVEL=low</strong> come env var per sessioni CI economiche.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">73</div>
+          <div class="card-title-wrap">
+            <span class="card-title">/fast — 2.5x Velocità con la Stessa Qualità</span>
+            <span class="card-tag" style="background:rgba(200,150,255,0.08); color:#c896ff;">/fast</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text"><strong style="color:#e8a060;">/fast</strong> attiva la fast mode di Opus 4.6 e 4.7: output 2.5x più veloce con la stessa qualità del modello. Disponibile per piani Max e Team (admin potrebbe dover abilitarla). Quando usarla: feedback rapido durante sviluppo interattivo dove la latenza spezza il flusso. Quando <em>non</em> usarla: task agentici lunghi dove il costo si accumula velocemente (fast mode costa ~6x al token), sessioni background o subagent dove nessuno aspetta l'output. <strong style="color:#e8a060;">Importante:</strong> non si combina con opusplan — quella modalità già mixa Opus e Sonnet internamente. Usa fast mode direttamente quando la latenza conta più del costo, disattivala per lavoro autonomo e batch.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">74</div>
+          <div class="card-title-wrap">
+            <span class="card-title">Ultrathink + Plan Mode — Il Combo Più Potente</span>
+            <span class="card-tag" style="background:rgba(200,150,255,0.08); color:#c896ff;">ultrathink + /plan</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Il pattern più performante dalla community: usa <strong style="color:#e8a060;">ultrathink</strong> nella fase di pianificazione con Opus, poi esegui con Sonnet. Esempio concreto: <strong style="color:#e8a060;">"ultrathink: analizza questo codebase e pianifica la migrazione da REST a GraphQL. Considera: schema design, resolver, caching, breaking changes, migration path."</strong> Claude spende i 32k token di pensiero sul piano. Poi: <strong style="color:#e8a060;">passa a Sonnet</strong> e implementa il piano approvato passo per passo. Perché funziona: ultrathink su Opus è costoso ma produce piani eccellenti. Sonnet esegue piani chiari in modo affidabile a costo basso. La qualità del piano determina la qualità del codice finale — investire qui è il miglior uso del budget. Combina round multipli di plan mode + ultrathink per problemi estremamente complessi.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">75</div>
+          <div class="card-title-wrap">
+            <span class="card-title">Thinking Interleaved — Ragionamento tra Tool Call</span>
+            <span class="card-tag" style="background:rgba(200,150,255,0.08); color:#c896ff;">adaptive thinking</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">I modelli Claude 4.6 e successivi supportano <strong style="color:#e8a060;">adaptive thinking</strong> con <strong style="color:#e8a060;">interleaved thinking</strong>: Claude può ragionare tra una tool call e l'altra nei workflow agentici, non solo all'inizio. Questo è un salto qualitativo enorme — il modello rivaluta i risultati di ogni tool call prima di decidere il passo successivo. Il vecchio approccio (budget_tokens manuale) non supporta interleaved thinking su Opus 4.6+. L'adaptive thinking lo attiva automaticamente. In pratica: nei workflow multi-step con subagenti, ogni agente usa interleaved thinking per valutare qualità, identificare gap e raffinare le query successive. Il risultato è codice più corretto fin dalla prima iterazione. Imposta <strong style="color:#e8a060;">MAX_THINKING_TOKENS=0</strong> per disabilitare completamente il pensiero in sessioni dove la velocità conta più della profondità.</div>
+      </div>
+    </div>
+
+    <!-- SECTION 12: CLI MAESTRIA -->
+    <div class="section-block" id="clipower">
+      <div class="section-header">
+        <div class="section-icon-box" style="background:rgba(90,220,180,0.08);">⌨️</div>
+        <div class="section-title">CLI Maestria</div>
+        <div class="section-range">76 – 80</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">76</div>
+          <div class="card-title-wrap">
+            <span class="card-title">Pipe + @file — Input Diretto Senza Copia-Incolla</span>
+            <span class="card-tag" style="background:rgba(90,220,180,0.08); color:#5adcb4;">cat | claude</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Due tecniche per passare dati a Claude senza aprire file: <strong style="color:#e8a060;">Pipe stdin</strong> — <strong style="color:#e8a060;">cat error.log | claude -p "trova la causa principale"</strong> invia il contenuto direttamente. Funziona con qualsiasi output Unix: <strong style="color:#e8a060;">git diff | claude -p "scrivi un commit message"</strong>, <strong style="color:#e8a060;">npm test 2&gt;&amp;1 | claude -p "cosa è fallito?"</strong>. <strong style="color:#e8a060;">@file mentions</strong> — dall'interno della sessione scrivi <strong style="color:#e8a060;">@src/auth/login.ts</strong> per referenziare un file direttamente senza che Claude debba cercarlo. Molto più veloce di "leggi il file X" perché evita una tool call di Read. Puoi usare più @file nello stesso prompt: <strong style="color:#e8a060;">"confronta @old-api.ts con @new-api.ts e trova le breaking changes"</strong>. Il percorso è relativo alla directory corrente e supporta tab-completion.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">77</div>
+          <div class="card-title-wrap">
+            <span class="card-title">/vim — Input con Keybinding Vim</span>
+            <span class="card-tag" style="background:rgba(90,220,180,0.08); color:#5adcb4;">/vim</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Digita <strong style="color:#e8a060;">/vim</strong> per attivare vim keybindings sull'input di Claude Code. Non è un'emulazione ridotta: include cambio di modalità Normal/Insert, navigazione completa (h/j/k/l, w/b/e, 0/$, f/F/t/T per character jump), operatori di editing (d, c, y, p), text objects (iw, aw, i", a(). Per chi vive in vim o neovim elimina il context switch cognitivo tra editor e CLI. Scrivi prompt complessi con la stessa muscle memory che usi per il codice. Toggle off con <strong style="color:#e8a060;">/vim</strong> di nuovo. La modalità persiste tra prompt nella sessione ma si resetta alla nuova sessione. Per la gestione della cronologia: <strong style="color:#e8a060;">Ctrl+R</strong> per ricerca reverse incrementale dei prompt precedenti (come in bash) — digita un frammento e trova i match. La history è per-directory: progetti diversi mantengono cronologie separate.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">78</div>
+          <div class="card-title-wrap">
+            <span class="card-title">--max-budget-usd + --max-turns — Guardrail per CI</span>
+            <span class="card-tag" style="background:rgba(90,220,180,0.08); color:#5adcb4;">--max-budget-usd</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Due flag critici per usare Claude Code in pipeline CI/CD senza rischio di costi runaway. <strong style="color:#e8a060;">--max-budget-usd 2.00</strong> impone un hard cap di spesa: Claude si ferma e ritorna un errore se supera il limite. Esempio: <strong style="color:#e8a060;">claude -p "fixa i test falliti" --max-budget-usd 2.00</strong>. <strong style="color:#e8a060;">--max-turns 5</strong> limita le iterazioni agentiche: utile per task semplici dove vuoi impedire loop infiniti o analisi eccessive. Esempio completo per CI: <strong style="color:#e8a060;">claude -p "controlla errori di linting" --model haiku --max-turns 3 --max-budget-usd 0.10</strong>. La tripletta modello economico + max-turns + budget cap garantisce che nessun prompt mal formulato possa prosciugare il budget mensile in un'unica pipeline fallita. Abbina a <strong style="color:#e8a060;">--output-format json</strong> per output parsabile da altri step del workflow.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">79</div>
+          <div class="card-title-wrap">
+            <span class="card-title">Ctrl+T Task List — Tracciamento Multi-Step</span>
+            <span class="card-tag" style="background:rgba(90,220,180,0.08); color:#5adcb4;">Ctrl+T</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Premi <strong style="color:#e8a060;">Ctrl+T</strong> per aprire il task list overlay: traccia il lavoro multi-step della sessione mostrando cosa è completato, cosa è in corso e cosa è in coda. La lista persiste attraverso le compaction del contesto — anche se /compact riassume la conversazione, il tracciamento dei task sopravvive. Per team: imposta <strong style="color:#e8a060;">CLAUDE_CODE_TASK_LIST_ID=nome</strong> come env var per condividere la stessa lista tra più sessioni di Claude Code che lavorano in parallelo sullo stesso progetto. Ogni sessione vede e aggiorna lo stato condiviso. Abbinalo a <strong style="color:#e8a060;">-n/--name "nome-sessione"</strong> al lancio per dare nomi leggibili alle sessioni, rendendo <strong style="color:#e8a060;">claude --resume</strong> molto più navigabile quando lavori su più feature in parallelo.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">80</div>
+          <div class="card-title-wrap">
+            <span class="card-title">Auto Mode + /sandbox — Permessi Intelligenti</span>
+            <span class="card-tag" style="background:rgba(90,220,180,0.08); color:#5adcb4;">auto mode</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Tre livelli di gestione permessi, da scegliere in base al rischio del task. <strong style="color:#e8a060;">Default</strong>: Claude chiede conferma per ogni azione — sicuro ma tedioso, alla decima approvazione stai solo cliccando senza leggere. <strong style="color:#e8a060;">Auto mode</strong>: un classifier model separato analizza ogni comando e blocca solo quelli rischiosi (scope escalation, infrastruttura sconosciuta, azioni potenzialmente distruttive). Tu approvi solo le eccezioni. Meglio di --dangerously-skip-permissions perché mantiene una rete di sicurezza. <strong style="color:#e8a060;">/sandbox</strong>: isolamento a livello OS per task sperimentali — Claude gira in un ambiente sandboxato dove le operazioni non possono colpire il tuo sistema host. <strong style="color:#e8a060;">/less-permission-prompts</strong> scansiona i tuoi transcript precedenti e propone automaticamente una allowlist per i comandi che hai sempre approvato, da aggiungere a settings.json per non vederli mai più.</div>
+      </div>
+    </div>
+
+    <!-- SECTION 13: SEGRETI DEL SISTEMA -->
+    <div class="section-block" id="secrets">
+      <div class="section-header">
+        <div class="section-icon-box" style="background:rgba(255,90,90,0.08);">🔐</div>
+        <div class="section-title">Segreti del Sistema</div>
+        <div class="section-range">81 – 90</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">81</div>
+          <div class="card-title-wrap">
+            <span class="card-title">opusplan — Opus Pensa, Sonnet Costruisce</span>
+            <span class="card-tag" style="background:rgba(255,90,90,0.08); color:#ff7a7a;">--model opusplan</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">L'alias di modello più utile di Claude Code: <strong style="color:#e8a060;">claude --model opusplan "task"</strong> usa Opus per la fase di pianificazione e passa automaticamente a Sonnet per l'esecuzione — senza che tu faccia nulla. Il routing è gestito internamente. Il risultato: qualità di ragionamento Opus sul piano architetturale, velocità e costo Sonnet sull'implementazione. Ideale per feature complesse dove non vuoi microgestire il cambio di modello. Se vuoi solo la fase di pianificazione con Opus senza eseguire, usa <strong style="color:#e8a060;">Ctrl+G</strong> per aprire il piano corrente nel tuo editor esterno e modificarlo prima di approvarlo. Dalla v2.1.112 i piani vengono nominati in base al prompt che li ha generati — molto più facili da navigare con --resume.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">82</div>
+          <div class="card-title-wrap">
+            <span class="card-title">/ultraplan — Pianifica nel Cloud mentre Lavori</span>
+            <span class="card-tag" style="background:rgba(255,90,90,0.08); color:#ff7a7a;">/ultraplan</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Research preview (v2.1.91+): <strong style="color:#e8a060;">/ultraplan</strong> delega la pianificazione a una sessione di Claude Code on the web che gira nel cloud. Il tuo terminale rimane completamente libero mentre il piano viene elaborato. Claude crea il draft nel browser: lo revisioni lì, approvi, e scegli se eseguirlo nella sessione cloud o teleportarlo nel terminale locale. Al primo utilizzo crea automaticamente l'ambiente cloud — niente setup, niente attesa per warm-up. La differenza rispetto a Plan Mode locale: il piano cloud può essere molto più lungo e dettagliato senza consumare context window della tua sessione principale. Perfetto per task architetturali enormi dove la pianificazione stessa richiederebbe ore di contesto.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">83</div>
+          <div class="card-title-wrap">
+            <span class="card-title">Prompt Caching — Cosa lo Rompe e Silenziosamente 5x i Costi</span>
+            <span class="card-tag" style="background:rgba(255,90,90,0.08); color:#ff7a7a;">cache traps</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Claude Code usa il prompt caching per ridurre drasticamente i costi: il system prompt e il contesto vengono cachati tra un prompt e l'altro. Tre azioni lo invalidano silenziosamente moltiplicando i costi di quel turno: <strong style="color:#e8a060;">1. Aggiungere un MCP server a metà sessione</strong> — i nuovi tool definitions vanno nel system prompt e invalidano tutto. <strong style="color:#e8a060;">2. Cambiare modello a metà sessione</strong> — il cache è specifico per modello. <strong style="color:#e8a060;">3. Includere timestamp nel system prompt o CLAUDE.md</strong> — il cache richiede contenuto identico; un timestamp che cambia rompe tutto. Regola pratica: tutto ciò che configuri all'inizio sessione è ok. Aggiunte mid-session sono costose. Monitorizza con /cost prima e dopo operazioni sospette.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">84</div>
+          <div class="card-title-wrap">
+            <span class="card-title">/compact [focus] — Comprimi Mantenendo il Contesto Critico</span>
+            <span class="card-tag" style="background:rgba(255,90,90,0.08); color:#ff7a7a;">/compact focus</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text"><strong style="color:#e8a060;">/compact</strong> senza argomenti riassume tutto in modo generico. Con un argomento focus diventa chirurgico: <strong style="color:#e8a060;">/compact focus on the auth refactoring decisions and current file structure</strong> dice a Claude esattamente cosa preservare nel riassunto. Claude mantiene quei dettagli specifici e comprime il resto. Questo è fondamentale perché senza focus si perdono spesso le decisioni architetturali chiave prese durante la sessione. Usalo sempre con focus quando sei oltre il 70% del contesto. Abbinato al HANDOFF.md: prima di compattare scrivi il focus document, poi usa quel focus per la compaction. Il contesto critico sopravvive in forma densa senza il rumore di tutto il resto.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">85</div>
+          <div class="card-title-wrap">
+            <span class="card-title">/context — Suggerimenti Azionabili sul Contesto</span>
+            <span class="card-tag" style="background:rgba(255,90,90,0.08); color:#ff7a7a;">/context</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Dalla v2.1.76 il comando <strong style="color:#e8a060;">/context</strong> non mostra solo il breakdown dei token — identifica attivamente i tool che consumano più contesto, segnala memory bloat, e avvisa quando ci si avvicina alla capacità limite con suggerimenti specifici di ottimizzazione. Esempio di output actionable: "GitHub MCP usa 17k token — disattivalo se non ti serve ora con /mcp". "CLAUDE.md ha 3 sezioni che non vengono mai usate in questa sessione — considera di spostarle in rules/". Il nuovo flag <strong style="color:#e8a060;">ENABLE_TOOL_SEARCH=auto:5</strong> sospende automaticamente le definizioni dei tool quando superano il 5% del contesto (più aggressivo del default 10%). Un Jira MCP da solo occupa ~17k token — con 5 MCP attivi puoi perdere 100k prima di scrivere una riga.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">86</div>
+          <div class="card-title-wrap">
+            <span class="card-title">27 Hook Events — Il Sistema Completo</span>
+            <span class="card-tag" style="background:rgba(255,90,90,0.08); color:#ff7a7a;">hooks avanzati</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Il sistema di hooks esposto dalla source code leak del 31 marzo 2026 conta 27 eventi, non solo i 3 documentati. Gli hook types più potenti: <strong style="color:#e8a060;">UserPromptSubmit</strong> (trasforma ogni prompt prima di inviarlo — puoi aggiungere contesto automatico). <strong style="color:#e8a060;">PreCompact/PostCompact</strong> (esegui operazioni prima/dopo compaction). <strong style="color:#e8a060;">SubagentStart/SubagentStop</strong> (monitora ogni subagente). <strong style="color:#e8a060;">TeammateIdle</strong> (notifica quando un agent team member aspetta). Oltre al tipo <strong style="color:#e8a060;">command</strong> (shell script) esistono <strong style="color:#e8a060;">prompt</strong> (hook che usa un LLM), <strong style="color:#e8a060;">http</strong> (webhook a server esterno), e <strong style="color:#e8a060;">agentic verifier</strong> (Claude verifica il proprio output prima di procedere). Esegui <strong style="color:#e8a060;">/hooks</strong> per vedere e modificare tutti gli hook configurati in sessione.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">87</div>
+          <div class="card-title-wrap">
+            <span class="card-title">sparsePaths + Agent Isolation — Monorepo senza Dolore</span>
+            <span class="card-tag" style="background:rgba(255,90,90,0.08); color:#ff7a7a;">sparsePaths</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Nei monorepo grandi ogni agente carica l'intero albero di file anche se lavora su un solo modulo. <strong style="color:#e8a060;">worktree.sparsePaths</strong> in settings.json limita il checkout a solo le directory necessarie via git sparse-checkout. Esempio in CLAUDE.md per isolare ogni agente: <strong style="color:#e8a060;">agents.isolation: worktree</strong> assegna automaticamente un worktree a ogni agente. <strong style="color:#e8a060;">sparsePaths: [src/auth/, tests/auth/]</strong> carica solo auth. L'agente frontend non vede il codice backend. L'agente DB non vede il frontend. Ogni agente carica solo i file rilevanti per il suo task. In monorepo da 200k+ file questo riduce il context warm-up da minuti a secondi e rende possibile il lavoro parallelo senza conflitti di stato.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">88</div>
+          <div class="card-title-wrap">
+            <span class="card-title">@server:resource — Fetch Diretto da MCP</span>
+            <span class="card-tag" style="background:rgba(255,90,90,0.08); color:#ff7a7a;">@server:resource</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Oltre ai tool MCP (azioni), i server MCP espongono <em>resources</em>: dati leggibili con sintassi diretta <strong style="color:#e8a060;">@server:resource</strong> nel prompt. Esempi: <strong style="color:#e8a060;">@github:repo/issues</strong> per le issue del repository corrente, <strong style="color:#e8a060;">@notion:page/PRD-2026</strong> per una pagina specifica, <strong style="color:#e8a060;">@postgres:schema/users</strong> per lo schema della tabella. La differenza con i tool: le resource sono read-only e immediate — niente tool call, niente approvazione. Claude riceve i dati direttamente nel contesto senza dover eseguire un'azione. Usa <strong style="color:#e8a060;">/permissions</strong> per allowlistare domini frequentemente usati con WebFetch, eliminando i prompt di conferma per URL che sai essere sicuri.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">89</div>
+          <div class="card-title-wrap">
+            <span class="card-title">MCP Elicitation — Form Strutturati Mid-Task</span>
+            <span class="card-tag" style="background:rgba(255,90,90,0.08); color:#ff7a7a;">elicitation</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Introdotto in v2.1.76: i server MCP possono ora richiedere input strutturato dall'utente a metà task tramite form interattivi invece di affidarsi a testo libero in chat. Il server invia uno schema JSON; Claude Code renderizza il form (campi testo, dropdown per enum, checkbox per booleani); l'utente compila; i dati validati tornano al server. Esempi pratici: il tool "delete-project" mostra un dropdown con i progetti disponibili invece di sperare che l'utente scriva il nome esatto. Un tool di deploy chiede l'ambiente target (staging/production) con un radio button. Il tool di commit genera un form per message, body e breaking changes. Gli hook <strong style="color:#e8a060;">Elicitation</strong> e <strong style="color:#e8a060;">ElicitationResult</strong> permettono di intercettare e trasformare le risposte prima che vengano inviate al server — automazione completa senza intervento manuale.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">90</div>
+          <div class="card-title-wrap">
+            <span class="card-title">autoMemoryDirectory + Memory Timestamps</span>
+            <span class="card-tag" style="background:rgba(255,90,90,0.08); color:#ff7a7a;">autoMemoryDirectory</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Due impostazioni per rendere il sistema di memoria di Claude Code molto più affidabile. <strong style="color:#e8a060;">autoMemoryDirectory</strong> in settings.json configura una directory personalizzata per la memoria automatica — utile per sincronizzare i file di memoria tra macchine via git o cloud storage. I file di memoria ora includono <strong style="color:#e8a060;">last-modified timestamps</strong>: Claude distingue tra ricordi freschi (questa settimana) e ricordi obsoleti (mesi fa) e pesa il contesto di conseguenza — non tratta più come equivalenti una decisione presa ieri e una presa sei mesi fa. <strong style="color:#e8a060;">modelOverrides</strong> permette di mappare le voci del model picker a ID personalizzati: ideale per team enterprise su AWS Bedrock che vogliono usare inference profile ARN specifici senza cambiare i workflow esistenti.</div>
+      </div>
+    </div>
+
+    <!-- SECTION 14: ULTIMO LIVELLO -->
+    <div class="section-block" id="ultimoliv">
+      <div class="section-header">
+        <div class="section-icon-box" style="background:rgba(255,220,60,0.08);">👁️</div>
+        <div class="section-title">Ultimo Livello</div>
+        <div class="section-range">91 – 99</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">91</div>
+          <div class="card-title-wrap">
+            <span class="card-title">Ctrl+O Verbose Mode — Vedi il Ragionamento in Diretta</span>
+            <span class="card-tag" style="background:rgba(255,220,60,0.08); color:#ffd83c;">Ctrl+O</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Premi <strong style="color:#e8a060;">Ctrl+O</strong> per attivare il verbose mode: Claude mostra il suo reasoning interno in tempo reale come testo corsivo grigio nel terminale. Vedi esattamente cosa sta valutando prima di rispondere — tool che considera, alternative che scarta, decisioni che prende. Utile per: capire perché Claude ha scelto un certo approccio, identificare quando il ragionamento va in una direzione sbagliata prima che produca codice errato, debugging di workflow agentici dove il comportamento non è quello atteso. Durante extended thinking il spinner mostra hint inline come "still thinking" e "almost done thinking". Il verbose mode trasforma Claude Code da black box a processo trasparente — fondamentale quando lavori su decisioni architetturali dove il percorso conta quanto il risultato.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">92</div>
+          <div class="card-title-wrap">
+            <span class="card-title">/pr-comments + /diff + /export — Il Trio del Code Review</span>
+            <span class="card-tag" style="background:rgba(255,220,60,0.08); color:#ffd83c;">/pr-comments</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Tre comandi che la maggior parte degli utenti non conosce. <strong style="color:#e8a060;">/pr-comments [PR-number]</strong> carica direttamente nella sessione tutti i commenti di una GitHub PR — senza usare gh CLI, senza copy-paste. Claude legge i feedback dei reviewer e suggerisce le modifiche. <strong style="color:#e8a060;">/diff</strong> apre un viewer interattivo delle modifiche in sospeso nella sessione corrente — vedi cosa sta per essere scritto prima che venga scritto. <strong style="color:#e8a060;">/export</strong> esporta l'intera conversazione in formato markdown con timestamp — utile per audit trail, per passare contesto a un collega, o per costruire una knowledge base delle decisioni tecniche. <strong style="color:#e8a060;">/copy</strong> copia l'ultima risposta di Claude direttamente nel clipboard. <strong style="color:#e8a060;">/agents</strong> mostra e gestisce tutti i subagenti attivi della sessione corrente.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">93</div>
+          <div class="card-title-wrap">
+            <span class="card-title">Session Recap — Riassunto Automatico al Ritorno</span>
+            <span class="card-tag" style="background:rgba(255,220,60,0.08); color:#ffd83c;">away summary</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Quando ritorni a una sessione dopo un'assenza lunga, Claude genera automaticamente un <strong style="color:#e8a060;">session recap</strong> (riassunto away): cosa è successo mentre eri via, quali task sono stati completati, dove si è fermato il lavoro. Utile per sessioni background con /loop o team mode dove agenti hanno lavorato in autonomia. Disattiva con <strong style="color:#e8a060;">CLAUDE_CODE_ENABLE_AWAY_SUMMARY=0</strong> se preferisci non averlo. Abbinato a <strong style="color:#e8a060;">claude --resume</strong> e i <strong style="color:#e8a060;">session names</strong> (-n flag) costruisce un sistema completo di stato persistente: ogni sessione ha un nome, un recap al ritorno, e i subagenti aggiornano la task list condivisa. Sviluppo async su task multi-giorno senza mai perdere il filo.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">94</div>
+          <div class="card-title-wrap">
+            <span class="card-title">Test Time Compute — Due Agenti Sullo Stesso Codice</span>
+            <span class="card-tag" style="background:rgba(255,220,60,0.08); color:#ffd83c;">test time compute</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Tecnica dalla community shanraisshan che sfrutta il fatto che context window separate producono risultati migliori: un agente può introdurre bug che lo stesso modello, partendo da zero, riesce a trovare. Il pattern: <strong style="color:#e8a060;">Agente A</strong> implementa la feature nel suo context window. <strong style="color:#e8a060;">Agente B</strong> riceve solo il codice prodotto (non la conversazione) e ha il task esplicito di trovare bug, edge case, e problemi di sicurezza. Agente B non ha bias cognitivi da "l'ho scritto io". Lo stesso concetto si estende: usa un secondo Claude per fare peer review del piano prima dell'esecuzione, come se fosse uno staff engineer — <strong style="color:#e8a060;">"spin up a second Claude to review this plan as a staff engineer"</strong>. Oppure usa cross-model: Opus scrive, Sonnet recensisce, o viceversa per prospettive diverse.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">95</div>
+          <div class="card-title-wrap">
+            <span class="card-title">PRD-Driven Development — Il Documento come Fonte di Verità</span>
+            <span class="card-tag" style="background:rgba(255,220,60,0.08); color:#ffd83c;">PRD + MCP</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Il pattern più scalabile per team: mantieni un <strong style="color:#e8a060;">Product Requirement Document</strong> (PRD.md) come unica fonte di verità e collega Claude Code via MCP. Con Notion MCP o un server custom, Claude ha sempre accesso alla versione più aggiornata dei requisiti senza che tu debba incollarli a ogni sessione. Claude può chiedere solo la sezione "Acceptance Criteria" o "Technical Requirements" tramite <strong style="color:#e8a060;">@notion:PRD-feature</strong> — non carica l'intero documento. Quando i requisiti cambiano nel PRD, la prossima sessione di Claude li vede automaticamente. Usa MCP elicitation per far sì che Claude chieda chiarimenti sulle parti ambigue del PRD invece di assumere. Il risultato: zero drift tra vision e codice prodotto. Particolarmente potente con /loop per task ricorrenti driven da PRD che si aggiornano nel tempo.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">96</div>
+          <div class="card-title-wrap">
+            <span class="card-title">Il Leak del 31 Marzo 2026 — Cosa Abbiamo Scoperto</span>
+            <span class="card-tag" style="background:rgba(255,220,60,0.08); color:#ffd83c;">44 feature flags</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Il 31 marzo 2026 Anthropic ha accidentalmente pubblicato un source map da 59.8 MB nella versione npm 2.1.88 — 512.000 righe di TypeScript pubblicamente accessibili per alcune ore prima dei takedown DMCA. Boris Cherny (creatore di Claude Code) ha confermato: errore dello sviluppatore, non un bug di tooling. Il leak ha esposto il system prompt completo, le definizioni dei tool, <strong style="color:#e8a060;">44 feature flags interni</strong> per funzionalità non ancora rilasciate, e la roadmap interna dei modelli. Le feature flags includono riferimenti a modalità collaborative multi-utente, integrazione IDE bidirezionale avanzata, e funzionalità di code generation parallela. Nessuna di queste è attivabile dagli utenti comuni. La cosa più utile del leak per gli sviluppatori: la conferma che le parole chiave di reasoning (ultrathink, etc.) attivano comportamenti reali nel preprocessing della CLI.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">97</div>
+          <div class="card-title-wrap">
+            <span class="card-title">Speculative Bash Classifier — Zero Latency su Comandi Sicuri</span>
+            <span class="card-tag" style="background:rgba(255,220,60,0.08); color:#ffd83c;">BASH_CLASSIFIER</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Quando <strong style="color:#e8a060;">BASH_CLASSIFIER=1</strong> è attivo, Claude Code fa partire in anticipo un classifier speculativo per ogni comando bash prima ancora che Claude decida di eseguirlo. Se il classifier ritorna con alta confidenza che il comando è sicuro, l'approvazione scatta istantaneamente — zero attesa per la tua conferma. Il classifier "gareggia" contro il timeout: se risponde prima, approva automaticamente. Se è incerto, cade nel path normale di approvazione interattiva. Risultato: comandi come <strong style="color:#e8a060;">git status</strong>, <strong style="color:#e8a060;">npm test</strong>, <strong style="color:#e8a060;">ls</strong>, <strong style="color:#e8a060;">cat</strong> vengono approvati prima che tu veda la richiesta. Solo i comandi con pattern rischiosi (rm, curl, sudo, comandi con flag distruttivi) arrivano al tuo schermo. Riduce la permission fatigue senza disabilitare alcuna protezione.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">98</div>
+          <div class="card-title-wrap">
+            <span class="card-title">env Vars Nascoste — Controllo a Basso Livello</span>
+            <span class="card-tag" style="background:rgba(255,220,60,0.08); color:#ffd83c;">env vars</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Variabili d'ambiente poco documentate che cambiano il comportamento di Claude Code in modo significativo. <strong style="color:#e8a060;">CLAUDE_CODE_NO_FLICKER=1</strong>: rendering engine sperimentale che elimina il flickering del terminale durante lo streaming. <strong style="color:#e8a060;">MAX_THINKING_TOKENS=0</strong>: disabilita completamente il pensiero esteso per sessioni veloci. <strong style="color:#e8a060;">CLAUDE_CODE_EFFORT_LEVEL=low</strong>: effort fisso basso per tutte le sessioni avviate da quella shell — ottimo per CI. <strong style="color:#e8a060;">CLAUDE_CODE_SUBAGENT_MODEL=haiku</strong>: tutti i subagenti meccanici usano Haiku invece di Sonnet, risparmiando fino al 60% sui costi di sessioni con molti subagenti. <strong style="color:#e8a060;">DISABLE_TELEMETRY=1</strong>: disabilita la telemetria (attiva automaticamente il session recap). <strong style="color:#e8a060;">CLAUDE_CODE_ENABLE_AWAY_SUMMARY=0</strong>: disabilita il recap automatico al ritorno dalla sessione.</div>
+      </div>
+
+      <div class="card-item" onclick="toggleCard(this)">
+        <div class="card-header">
+          <div class="card-num">99</div>
+          <div class="card-title-wrap">
+            <span class="card-title">La Legge di Ferro dell'Autonomia Co-costruita</span>
+            <span class="card-tag" style="background:rgba(255,220,60,0.08); color:#ffd83c;">meta-tecnica</span>
+          </div>
+          <div class="card-arrow">▼</div>
+        </div>
+        <div class="card-body-text">Dalla ricerca di Anthropic su dati longitudinali di utilizzo: il tasso di auto-approvazione degli utenti sale dal ~20% nelle prime 50 sessioni al >40% dopo 750 sessioni. Non perché Claude diventi meno rischioso — ma perché l'utente ha imparato esattamente dove fidarsi e dove no. Il sistema è progettato per <em>trust trajectories</em>, non stati fissi. La tecnica meta: <strong style="color:#e8a060;">tieni un diario delle decisioni</strong> — ogni volta che Claude fa qualcosa di sorprendentemente buono o sorprendentemente sbagliato, annotalo in CLAUDE.md nella sezione "Gotchas" (pattern dalla community shanraisshan). Ogni skill dovrebbe avere una sezione Gotchas che accumula i failure point di Claude su quel dominio nel tempo. La qualità non sale cambiando Claude — sale modellando con precisione il contesto che gli dai. Questa è la tecnica finale: investire nel contesto è il ROI più alto di tutta la lista.</div>
+      </div>
+    </div>
+
+    <!-- SETUP BOX REDESIGNED -->
+    <div style="margin-top:24px; position:relative; overflow:hidden; border-radius:16px; padding:44px 36px; background:#0f0d0b; border:1px solid rgba(200,120,60,0.2);">
+      <!-- glow -->
+      <div style="position:absolute; top:-60px; right:-60px; width:250px; height:250px; background:radial-gradient(circle, rgba(220,120,40,0.08) 0%, transparent 70%); pointer-events:none;"></div>
+
+      <!-- header -->
+      <div style="display:flex; align-items:center; gap:16px; margin-bottom:6px;">
+        <div style="width:3px; height:28px; background:linear-gradient(180deg,#e8a060,#8a4020); border-radius:2px; flex-shrink:0;"></div>
+        <div style="font-family:'Playfair Display',serif; font-size:24px; color:#f0e0c0;">Il Setup che Lega Tutto</div>
+      </div>
+      <p style="font-family:'Lato',sans-serif; font-weight:300; font-size:13px; color:#5a3a20; margin-bottom:36px; line-height:1.6; padding-left:19px;">
+        5 minuti all'inizio di ogni progetto. Trasformano ogni ora successiva.
+      </p>
+
+      <!-- steps -->
+      <div style="display:flex; flex-direction:column; gap:0;">
+        <div class="setup-step-new">
+          <div class="step-num-new">1</div>
+          <div class="step-content-new">
+            <span class="step-cmd">/init</span>
+            <span class="step-desc">genera CLAUDE.md con struttura, stack e pattern rilevati</span>
+          </div>
+        </div>
+        <div class="setup-connector"></div>
+        <div class="setup-step-new">
+          <div class="step-num-new">2</div>
+          <div class="step-content-new">
+            <span class="step-cmd">Standard di codice</span>
+            <span class="step-desc">aggiungi pattern e convenzioni al CLAUDE.md</span>
+          </div>
+        </div>
+        <div class="setup-connector"></div>
+        <div class="setup-step-new">
+          <div class="step-num-new">3</div>
+          <div class="step-content-new">
+            <span class="step-cmd">/memory</span>
+            <span class="step-desc">regole persistenti che si applicano ad ogni sessione futura</span>
+          </div>
+        </div>
+        <div class="setup-connector"></div>
+        <div class="setup-step-new">
+          <div class="step-num-new">4</div>
+          <div class="step-content-new">
+            <span class="step-cmd">Modalità Piano</span>
+            <span class="step-desc">progetta l'architettura prima di scrivere una riga</span>
+          </div>
+        </div>
+        <div class="setup-connector"></div>
+        <div class="setup-step-new">
+          <div class="step-num-new">5</div>
+          <div class="step-content-new">
+            <span class="step-cmd">Build incrementale</span>
+            <span class="step-desc">una feature alla volta, test ad ogni passo, checkpoint git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .setup-step-new { display:flex; align-items:center; gap:18px; padding:14px 0; }
+      .step-num-new {
+        width:32px; height:32px; border-radius:50%; flex-shrink:0;
+        display:flex; align-items:center; justify-content:center;
+        font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:500;
+        color:#e8a060; border:1px solid rgba(232,160,60,0.3);
+        background:rgba(232,120,40,0.06);
+      }
+      .setup-connector { width:1px; height:16px; background:linear-gradient(180deg, rgba(232,120,40,0.25), rgba(232,120,40,0.05)); margin-left:15px; }
+      .step-content-new { display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; }
+      .step-cmd { font-family:'JetBrains Mono',monospace; font-size:13px; color:#e8c8a0; font-weight:500; }
+      .step-desc { font-family:'Lato',sans-serif; font-weight:300; font-size:13px; color:#5a3a20; }
+    </style>
 
     <!-- FOOTER -->
     <div style="margin-top:64px; padding-top:32px; border-top:1px solid #1a1a22; display:flex; flex-direction:column; gap:6px;">
-      <div style="font-family:'Playfair Display',serif; font-style:italic; font-size:18px; color:#6a6a7e;">Christian Quintino De Luca</div>
+      <div style="font-family:'Playfair Display',serif; font-style:italic; font-size:18px; color:#a06040;">Christian Quintino De Luca</div>
       <a href="mailto:info@rthitalia.com" style="font-family:'JetBrains Mono',monospace; font-size:12px; color:#e8ff5a; text-decoration:none; letter-spacing:0.05em; opacity:0.7;">info@rthitalia.com</a>
-      <div style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#2a2a38; letter-spacing:0.1em; margin-top:8px; text-transform:uppercase;">57 tecniche · Testate ogni giorno · Zero teoria</div>
+      <div style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#2a2a38; letter-spacing:0.1em; margin-top:8px; text-transform:uppercase;">99 tecniche · Testate ogni giorno · Zero teoria</div>
     </div>
 
   </div>
