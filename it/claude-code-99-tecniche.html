@@ -681,11 +681,23 @@
           <div class="card-num">41</div>
           <div class="card-title-wrap">
             <span class="card-title">Eco Mode — Risparmia il 40% di Token</span>
-            <span class="card-tag" style="background:rgba(90,180,255,0.08); color:#5ab4ff;">eco:</span>
+            <span class="card-tag" style="background:rgba(90,180,255,0.08); color:#5ab4ff;">settings.json</span>
           </div>
           <div class="card-arrow">▼</div>
         </div>
-        <div class="card-body-text">La keyword <strong style="color:#e8a060;">eco:</strong> attiva il routing intelligente dei modelli: Haiku per lookup semplici e task ripetitivi, Sonnet per il lavoro standard, Opus solo dove serve ragionamento profondo. Risparmio reale del 30–50% sul costo dei token senza perdita di qualità percepibile. Usalo per sessioni lunghe, migrazioni di database, o qualsiasi task con molti step ripetitivi. Esempio: <strong style="color:#e8a060;">eco: migra tutti i componenti React da class a functional.</strong></div>
+        <div class="card-body-text">Il risparmio reale sui subagenti non viene da una keyword magica ma da due variabili d'ambiente che si combinano.<br><br>
+<strong style="color:#e8a060;">CLAUDE_CODE_FORK_SUBAGENT=1</strong> fa sì che ogni subagente erediti la cache del parent — non rilégge tutto il contesto da zero, parte già da uno stato caldo. Elimini il costo di warmup su ogni fork senza degradare il modello.<br><br>
+<strong style="color:#e8a060;">CLAUDE_CODE_SUBAGENT_MODEL=claude-sonnet-4-6</strong> abbassa il modello dei subagenti meccanici da Opus a Sonnet.<br><br>
+Combinati in settings.json:
+<pre style="background:rgba(0,0,0,0.2); padding:10px; border-radius:6px; margin:10px 0; font-family:'JetBrains Mono',monospace; font-size:12px; color:#e0e0e0;">
+{
+  "env": {
+    "CLAUDE_CODE_FORK_SUBAGENT": "1",
+    "CLAUDE_CODE_SUBAGENT_MODEL": "claude-sonnet-4-6"
+  }
+}
+</pre>
+Risparmio reale del 40-60% su sessioni con molti subagenti. Nessuna keyword da scrivere nel prompt — configurazione una volta sola, attiva sempre.</div>
       </div>
 
       <div class="card-item" onclick="toggleCard(this)">
@@ -1509,7 +1521,7 @@
           <div class="step-num-new">5</div>
           <div class="step-content-new">
             <span class="step-cmd">Build incrementale</span>
-            <span class="step-desc">una feature alla volta, test ad ogni passo, checkpoint git</span>
+            <span class="step-desc">una feature alla volta, test ad ogni passo, checkpoint git. Con Opus su task architetturali complessi, considera invece un singolo prompt con tutto il contesto — vedi tecniche 36-40.</span>
           </div>
         </div>
       </div>
